@@ -1,0 +1,32 @@
+﻿Version,Created By,Created Date,Version Notes
+v0.1 ,OBL Standards Team,01-Jul-24,"1) OBExternalDirectDebitFrequency1Code codeset and codevalues are also removed and replaced with OBFrequency6Code 
+
+2) Removed incorrect values from OBInternalCardSchemeType1Codes
+
+3) Removed duplicate entries of ExternalBalanceType1Code, ExternalBalanceSubType1Code
+
+4) OBExternalStatus1Code codeset and codevalues are also removed and replaced with ExternalPaymentTransactionStatus1Code
+
+5) Moved all ExternalPaymentTransactionStatus1Code from ISO_External_Codeset to OB_Internal_Codeset
+
+6) Added BusinessCurrentAccount which was missing as a Code Value in OBInternalProductType1Code
+
+7) Replaced few OBInternalProductType1Code with OBExternalOfferType1Code as they were incorrectly under that codeset
+
+8) Removed ACIS from ISO_External_Codeset because it is not applicable
+
+9) Renamed OBExternalPaymentTransactionStatus1Code to ExternalPaymentTransactionStatus1Code for two code values (INFA and INCO) in OB_Internal_Codeset
+
+10) Moved ExternalPaymentGroupStatus1Code from ISO_External_Codeset to OB_Internal_Codeset 
+
+11) Added two code sets INFA and INCO under ExternalPaymentGroupStatus1Code
+
+12) Rename OBExternalClassification1Code with OBExternalMandateClassification1Code
+
+13) Updated CodeValue and CodeDefinition of all OBExternalMandateClassification1Code"
+,,,
+,,,
+,,,
+,,,
+,,Note:,"Information that has been removed is marked as struck out
+And that has changed or added is marked in blue"
