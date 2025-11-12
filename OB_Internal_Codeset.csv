@@ -563,6 +563,8 @@ OBInternalStatementFeeType1Code,UK.OBIE.PostalOrder,UK.OBIE.PostalOrder,Postal o
 OBInternalStatementFeeType1Code,UK.OBIE.PrizeEntry,UK.OBIE.PrizeEntry,Prize entry fees charged during the statement period.,,
 OBInternalStatementFeeType1Code,UK.OBIE.StatementCopy,UK.OBIE.StatementCopy,Statement copy fees charged during the statement period.,,
 OBInternalStatementFeeType1Code,UK.OBIE.Total,UK.OBIE.Total,Total fees charges during the statement period.,,
+OBInternalStatementFeeType1Code,UK.OBIE.InstalmentPlan,UK.OBIE.InstalmentPlan,Instalment plan fees charged during the statement period.,,
+OBInternalStatementFeeType1Code,UK.OBIE.ReturnedPayment,UK.OBIE.ReturnedPayment,Returned payment fees charged during the statement period.,,
 OBInternalStatementInterestType1Code,UK.OBIE.BalanceTransfer,UK.OBIE.BalanceTransfer,Interest on balance transfers.,,
 OBInternalStatementInterestType1Code,UK.OBIE.Cash,UK.OBIE.Cash,Interest on cash advances.,,
 OBInternalStatementInterestType1Code,UK.OBIE.EstimatedNext,UK.OBIE.EstimatedNext,The estimated interest that will be charged if the closing balance is not paid in full.,,
