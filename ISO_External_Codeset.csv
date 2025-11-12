@@ -644,6 +644,7 @@ ExternalPurpose1Code,CPEN,CashPenalties,"Cash penalties related to securities tr
 ExternalPurpose1Code,DEPD,DependentSupportPayment,"Transaction is related to a payment concerning dependent support, for example child support or support for a person substantially financially dependent on the support provider.",
 ExternalPurpose1Code,RETL,RetailPayment,Retail payment including e-commerce and online shopping.,
 ExternalPurpose1Code,DEBT,ChargesBorneByDebtor,Purpose of payment is the settlement of charges payable by the debtor in relation to an underlying customer credit transfer.,
+ExternalPurpose1Code,CRYP,CryptoTransaction,Transaction is for the purchase of cryptocurrency,
 ExternalSystemBalanceType1Code,ADJT,Adjustment,"Average balance to be held in the settlement account at the end of each day in order to fulfil the reserve due.
 The approximation will be always made rounding up.",
 ExternalSystemBalanceType1Code,ADWR,AvailableDMVForDiscountWindowRepo,Balance represents the available discounted market value for discount window repo.,
