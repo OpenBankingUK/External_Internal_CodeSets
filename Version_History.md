@@ -1,7 +1,7 @@
 ## **Version History**
 
-> **Note**: Information that has been removed is marked as <del>struck out </del> and that has changed or added is 
-> marked in <span style="color: blue;">blue</span>.
+> **Note**: Information that has been removed is marked as ~~struck out~~ and that has changed or added is 
+> marked as <u>underlined</u>.
 > 
 > Refer to [KI Page](https://openbanking.atlassian.net/wiki/spaces/DZ/pages/47546479/Known+Specification+Issues) for all the known issues.                                             
 
