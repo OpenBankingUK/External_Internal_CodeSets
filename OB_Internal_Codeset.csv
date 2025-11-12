@@ -570,6 +570,8 @@ OBInternalStatementInterestType1Code,UK.OBIE.Cash,UK.OBIE.Cash,Interest on cash 
 OBInternalStatementInterestType1Code,UK.OBIE.EstimatedNext,UK.OBIE.EstimatedNext,The estimated interest that will be charged if the closing balance is not paid in full.,,
 OBInternalStatementInterestType1Code,UK.OBIE.Purchase,UK.OBIE.Purchase,Interest on purchases.,,
 OBInternalStatementInterestType1Code,UK.OBIE.Total,UK.OBIE.Total,Total interest charges during the statement period.,,
+OBInternalStatementInterestType1Code,UK.OBIE.InstalmentPlan,UK.OBIE.InstalmentPlan,Interest on instalment plan,,
+OBInternalStatementInterestType1Code,UK.OBIE.MoneyTransfer,UK.OBIE.MoneyTransfer,Interest on money transfers,,
 OBInternalStatementRateType1Code,UK.OBIE.AnnualBalanceTransfer,UK.OBIE.AnnualBalanceTransfer,Annual interest rate charged on balance transfer from other service provider.,,
 OBInternalStatementRateType1Code,UK.OBIE.AnnualBalanceTransferAfterPromo,UK.OBIE.AnnualBalanceTransferAfterPromo,Annual interest rate charged on balance transfer from other service provider after promotional period.,,
 OBInternalStatementRateType1Code,UK.OBIE.AnnualBalanceTransferPromo,UK.OBIE.AnnualBalanceTransferPromo,Annual interest rate charged on balance transfer from other service provider during promotional period.,,
