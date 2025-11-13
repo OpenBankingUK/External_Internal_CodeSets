@@ -730,7 +730,3 @@ ExternalTaxAmountType1Code,CNTY,CountyTax,Tax accessed by county jurisdications 
 ExternalTaxAmountType1Code,LOCL,LocalTax,Tax accessed by local jurisdications within a country.,
 ExternalTaxAmountType1Code,PROV,ProvinceTax,Tax accessed by province jurisdications within a country.,
 ExternalTaxAmountType1Code,STAT,StateTax,Tax accessed by state jurisdications within a country.,
-ExternalMandateStatus1Code,ACTV,Active,The mandate is active.,
-ExternalMandateStatus1Code,CANC,Cancelled,The mandate is cancelled.,
-ExternalMandateStatus1Code,EXPI,Expired,The mandate has passed the end date.,
-ExternalMandateStatus1Code,SUSP,Suspended,The mandate is put on hold.,
