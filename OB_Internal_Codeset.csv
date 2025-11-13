@@ -161,7 +161,6 @@ OBInternalStatus2Code,AWAF,Awaiting Further Authorisation,The multiple authorisa
 OBInternalStatus2Code,RJCT,Rejected,The multiple authorisation flow has been rejected.,,Old OBExternalStatus2Code
 OBInternalStatus2Code,AUTH,Authorised,The multiple authorisation flow has been fully authorised.,,Old OBExternalStatus2Code
 OBExternalAuthorisation1Code,Multiple,Multiple authorisation type is requested.,,,
-OBExternalStatus3Code,Cancelled,Payment initiation has been successfully cancelled after having received a request for cancellation.,,,
 OBFrequency6Code,ADHO,Adhoc,Event takes place on request or as necessary.,,
 OBFrequency6Code,YEAR,Annual,Event takes place every year or once a year.,,
 OBFrequency6Code,DAIL,Daily,Event takes place every day.,,
@@ -728,7 +727,7 @@ OBInternalCardAuthorisationType1Code,None,None,No card authorisation was used.,,
 OBInternalCardAuthorisationType1Code,PIN,PIN,Card authorisation was via PIN.,,
 OBInternalBeneficiaryType1Code,Trusted,Trusted,Specifies the Beneficiary Type.,,
 OBInternalBeneficiaryType1Code,Ordinary,Ordinary,Specifies the Beneficiary Type.,,
-OBInternalCardSchemeType1Code,BusinessCurrentAccount,BusinessCurrentAccount,"Descriptive code for the product category. If ProductType - ""Other"" is chosen, the object OtherProductType must be populated with name, and description.",,
+OBInternalProductType1Code,BusinessCurrentAccount,BusinessCurrentAccount,"Descriptive code for the product category. If ProductType - ""Other"" is chosen, the object OtherProductType must be populated with name, and description.",,
 OBInternalProductType1Code,CommercialCreditCard,CommercialCreditCard,"Descriptive code for the product category. If ProductType - ""Other"" is chosen, the object OtherProductType must be populated with name, and description.",,
 OBInternalProductType1Code,Other,Other,"Descriptive code for the product category. If ProductType - ""Other"" is chosen, the object OtherProductType must be populated with name, and description.",,
 OBInternalProductType1Code,PersonalCurrentAccount,PersonalCurrentAccount,"Descriptive code for the product category. If ProductType - ""Other"" is chosen, the object OtherProductType must be populated with name, and description.",,
