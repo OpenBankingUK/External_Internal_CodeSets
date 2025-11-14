@@ -75,7 +75,7 @@ ExternalPaymentGroupStatus1Code,PART,PartiallyAccepted,"A number of transactions
 ExternalPaymentGroupStatus1Code,PDNG,Pending,Payment initiation or individual transaction included in the payment initiation is pending. Further checks and status update will be performed.,,
 ExternalPaymentGroupStatus1Code,RCVD,Received,Payment initiation has been received by the receiving agent,,
 ExternalPaymentGroupStatus1Code,RJCT,Rejected,Payment initiation or individual transaction included in the payment initiation has been rejected.,,
-ExternalPaymentGroupStatus1Code,INFA,InitiationFailed,FilePayment initiation has failed in part of full.,,
+ExternalPaymentGroupStatus1Code,INFA,InitiationFailed,FilePayment initiation has failed in part or full.,,
 ExternalPaymentGroupStatus1Code,INCO,InitiationCompleted,FilePayment initiation has been successfully completed but refer to individual transactions for individual status. ,,
 OBExternalStatusReason1Code,0080,Expected within unspecified period but within PSD guidelines,,,
 OBExternalStatusReason1Code,0081,Expected on same day,,,
