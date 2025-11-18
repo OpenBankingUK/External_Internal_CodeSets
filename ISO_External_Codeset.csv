@@ -37,8 +37,7 @@ ExternalBalanceType1Code,ITAV,InterimAvailable,"Available balance calculated in 
 ExternalBalanceType1Code,ITBD,InterimBooked,"Balance calculated in the course of the account servicer's business day, at the time specified, and subject to further changes during the business day. The interim balance is calculated on the basis of booked credit and debit items during the calculation time/period specified. ",
 ExternalBalanceType1Code,OPAV,OpeningAvailable,Opening balance of amount of money that is at the disposal of the account owner on the date specified. ,
 ExternalBalanceType1Code,OPBD,OpeningBooked,Book balance of the account at the beginning of the account reporting period. It always equals the closing book balance from the previous report. ,
-ExternalBalanceType1Code,PRCD,PreviouslyClosedBooked,"Balance of the account at the previously closed account reporting period. The opening booked balance for the new period has to be equal to this balance.
-Usage: the previously booked closing balance should equal (inclusive date) the booked closing balance of the date it references and equal the actual booked opening balance of the current date.",
+ExternalBalanceType1Code,PRCD,PreviouslyClosedBooked,"Balance of the account at the previously closed account reporting period. The opening booked balance for the new period has to be equal to this balance. Usage: the previously booked closing balance should equal (inclusive date) the booked closing balance of the date it references and equal the actual booked opening balance of the current date.",
 ExternalBalanceType1Code,XPCD,Expected,"Balance, composed of booked entries and pending items known at the time of calculation, which projects the end of day balance if everything is booked on the account and no other entry is posted. ",
 ExternalCategoryPurpose1Code,BONU,BonusPayment,Transaction is the payment of a bonus.,Both
 ExternalCategoryPurpose1Code,CASH,CashManagementTransfer,Transaction is a general cash management instruction.,Both
@@ -76,12 +75,9 @@ ExternalCategoryPurpose1Code,TRAD,Trade,Transaction is related to the payment of
 ExternalCategoryPurpose1Code,TREA,TreasuryPayment,Transaction is related to treasury operations.  E.g. financial contract settlement.,CHAPS
 ExternalCategoryPurpose1Code,VATX,ValueAddedTaxPayment,Transaction is the payment of value added tax.,Both
 ExternalCategoryPurpose1Code,WHLD,WithHolding,Transaction is the payment of withholding tax.,Both
-ExternalCategoryPurpose1Code,SWEP,CashManagementSweepAccount,"Classification: Cash Management. Transaction relates to a cash management instruction, requesting a sweep of the account of the Debtor above an agreed floor amount, up to a target or zero balance.
-The purpose is to move the funds from multiple accounts to a single bank account. Funds can move domestically or across border and more than one bank can be used.",
-ExternalCategoryPurpose1Code,TOPG,CashManagementTopAccount,"Classification: Cash Management. Transaction relates to a cash management instruction, requesting to top the account of the Creditor above a certain floor amount, up to a target or zero balance. 
-The floor amount, if not pre-agreed by the parties involved, may be specified.",
-ExternalCategoryPurpose1Code,ZABA,CashManagementZeroBalanceAccount,"Transaction relates to a cash management instruction, requesting to zero balance the account of the Debtor.
-Zero Balance Accounts empty or fill the balances in accounts at the same bank, in the same country into or out of a main account each day.",
+ExternalCategoryPurpose1Code,SWEP,CashManagementSweepAccount,"Classification: Cash Management. Transaction relates to a cash management instruction, requesting a sweep of the account of the Debtor above an agreed floor amount, up to a target or zero balance. The purpose is to move the funds from multiple accounts to a single bank account. Funds can move domestically or across border and more than one bank can be used.",
+ExternalCategoryPurpose1Code,TOPG,CashManagementTopAccount,"Classification: Cash Management. Transaction relates to a cash management instruction, requesting to top the account of the Creditor above a certain floor amount, up to a target or zero balance. The floor amount, if not pre-agreed by the parties involved, may be specified.",
+ExternalCategoryPurpose1Code,ZABA,CashManagementZeroBalanceAccount,"Transaction relates to a cash management instruction, requesting to zero balance the account of the Debtor. Zero Balance Accounts empty or fill the balances in accounts at the same bank, in the same country into or out of a main account each day.",
 ExternalCategoryPurpose1Code,VOST,CrossborderMIPayments,Transaction to be processed as a domestic payment instruction originated from a foreign bank.,
 ExternalCategoryPurpose1Code,FCDT,ForeignCurrencyDomesticTransfer,Foreign Currency Transaction that is processed between two domestic financial institutions.,
 ExternalCategoryPurpose1Code,CIPC,CashInPreCredit,Transaction is a direct debit for a cash order of notes and/or coins.,
@@ -159,8 +155,7 @@ ExternalDocumentLineType1Code,STNB,StyleNumber,Line item reference is a style nu
 ExternalDocumentLineType1Code,TONB,TechnicalOrderNumber,Line item reference is a technical order number.,
 ExternalDocumentLineType1Code,UPCC,UPCConsumerPackageCode,Line item reference is an UPC consumer package code.,
 ExternalDocumentLineType1Code,UPNB,UniversalProductNumber,Line item reference is an Universal Product Number.,
-ExternalDocumentPurpose1Code,CONF,Confirmed,"The document represents a document that has been confirmed, for example an invoice that has been confirmed by the buyer for payment.
-",
+ExternalDocumentPurpose1Code,CONF,Confirmed,"The document represents a document that has been confirmed, for example an invoice that has been confirmed by the buyer for payment.",
 ExternalDocumentPurpose1Code,FINV,Factoredinvoice,The document represents an invoice submitted under a factoring arrangment. ,
 ExternalDocumentType1Code,CINV,CommercialInvoice,Document is an invoice.,
 ExternalDocumentType1Code,CNFA,CreditNoteRelatedToFinancialAdjustment,Document is a credit note for the final amount settled for a commercial transaction.,
@@ -185,13 +180,10 @@ ExternalDocumentType1Code,CMCN,CommercialContract,"Document is an agreement betw
 ExternalDocumentType1Code,SOAC,StatementOfAccount,Document is a statement of the transactions posted to the debtor's account at the supplier.,
 ExternalDocumentType1Code,TSUT,TradeServicesUtilityTransaction,Document is a transaction identifier as assigned by the Trade Services Utility.,
 ExternalDocumentType1Code,VCHR,Voucher,Document is an electronic payment document.,
-ExternalEntryStatus1Code,BOOK,Booked,"Booked means that the transfer of money has been completed between account servicer and account owner.
-Usage: Status Booked does not necessarily imply finality of money as this depends on other factors such as the payment system used, the completion of the end-to-end transaction and the terms agreed between account servicer and owner.
-Status Booked is the only status that can be reversed.",
+ExternalEntryStatus1Code,BOOK,Booked,"Booked means that the transfer of money has been completed between account servicer and account owner. Usage: Status Booked does not necessarily imply finality of money as this depends on other factors such as the payment system used, the completion of the end-to-end transaction and the terms agreed between account servicer and owner. Status Booked is the only status that can be reversed.",
 ExternalEntryStatus1Code,FUTR,Future,Entry is on the books of the account servicer and value will be applied to the account owner at a future date and time.,
 ExternalEntryStatus1Code,INFO,Information,"Entry is only provided for information, and no booking on the account owner's account in the account servicer's ledger has been performed.",
-ExternalEntryStatus1Code,PDNG,Pending,"Booking on the account owner's account in the account servicer's ledger has not been completed.
-Usage: this can be used for expected items, or for items for which some conditions still need to be fulfilled before they can be booked. If booking takes place, the entry will be included with status Booked in subsequent account report or statement. Status Pending cannot be reversed.",
+ExternalEntryStatus1Code,PDNG,Pending,"Booking on the account owner's account in the account servicer's ledger has not been completed. Usage: this can be used for expected items, or for items for which some conditions still need to be fulfilled before they can be booked. If booking takes place, the entry will be included with status Booked in subsequent account report or statement. Status Pending cannot be reversed.",
 ExternalEntryStatus1Code,RJCT,Rejected,Entry was on the books of the account servicer and has been rejected.,
 ExternalGarnishmentType1Code,GNCS,GarnishmentForChildSupport,Garnishment from a third party payer for Child Support,
 ExternalGarnishmentType1Code,GNDP,GarnishmentForChildSupportFromDirectPayer,Garnishment from a direct payer for Child Support,
@@ -273,46 +265,34 @@ ExternalPersonIdentification1Code,POID,PersonCommercialIdentification,Commercial
 ExternalProxyAccountType1Code,TELE,TelephoneNumber,A telephone number in the format specified by the 'The international public telecommunication numbering plan ITU-T E.164. ,
 ExternalProxyAccountType1Code,EMAL,EmailAddress,Internationalised address of an electronic mail box for internet messages.,
 ExternalProxyAccountType1Code,DNAM,DomainName,Internationalised internet domain name.,
-ExternalProxyAccountType1Code,CINC,CertificateOfIncorporationNumber,"Corporate Identification issued by a national  institution or regulator, used as account proxy. 
-(applied for corporate account proxy).",
+ExternalProxyAccountType1Code,CINC,CertificateOfIncorporationNumber,"Corporate Identification issued by a national  institution or regulator, used as account proxy. (applied for corporate account proxy).",
 ExternalProxyAccountType1Code,COTX,CorporateTaxIdentification,Unique government-issued tax Identification used as account proxy to identify the corporate (for example for government tax) and typically linked to the corporate bank account (applied for corporate account proxy).,
 ExternalProxyAccountType1Code,COID,CountryAuthorityIdentification,"Identification issued by a national  institution or regulator (different from a national scheme like a clearing provider), used as account proxy (applied for corporate or individual account proxy).",
-ExternalProxyAccountType1Code,CUST,CustomerIdentificationNumber,"Any other customer identification number issued by a corporate, bank or other organization, used as account proxy.
-(applied for corporate or individual account proxy).",
+ExternalProxyAccountType1Code,CUST,CustomerIdentificationNumber,"Any other customer identification number issued by a corporate, bank or other organization, used as account proxy. (applied for corporate or individual account proxy).",
 ExternalProxyAccountType1Code,DRLC,DriverLicenseNumber,"Unique government-issued Identification used as account proxy to  identify the individual  (for example for government charges, road taxes and tolls,vaccination charges) and typically linked to the individual's bank account (applied for  individual account proxy).",
 ExternalProxyAccountType1Code,EIDN,ElectronicIdentification,Government-issued Identification (different from a passport Identification or a national Identification). Used as account proxy to  identify the individual (for example for public benefits) and typically linked to the individual's bank account (applied for  individual account proxy).,
 ExternalProxyAccountType1Code,EWAL,EWalletIdentification,"Market-adopted prepaid instruments like e-Wallets, payments to / from e-wallets from / to bank accounts (applied for corporate or individual account proxy).",
 ExternalProxyAccountType1Code,PVTX,IndividualTaxIdentification,Unique government-issued  tax Identification  used as account proxy to  identify the individual  for example for government tax) and typically linked to the individual's bank account (applied for  individual account proxy).,
-ExternalProxyAccountType1Code,LEIC,LegalEntityIdentifierCode,"Legal Entity Identifier used as account proxy (applied for corporate account proxy).
-Use cases: Can be used by corporates as a ""government-issued"" Identification for registration with payment schemes as a proxy. The proxy may be further used for payments and collections using the underlying instant payment rails for a variety of corporate use cases.",
+ExternalProxyAccountType1Code,LEIC,LegalEntityIdentifierCode,"Legal Entity Identifier used as account proxy (applied for corporate account proxy). Use cases: Can be used by corporates as a ""government-issued"" Identification for registration with payment schemes as a proxy. The proxy may be further used for payments and collections using the underlying instant payment rails for a variety of corporate use cases.",
 ExternalProxyAccountType1Code,MBNO,MobilePhoneNumber,"Mobile phone number in the format specified by the “The international public telecommunication numbering plan ITU- T E 164"" (applied for corporate or individual account proxy).",
-ExternalProxyAccountType1Code,NIDN,NationalIdentificationNumber,"Unique government-issued Identification  used as account proxy to  identify the individual  or corporate for example for public benefits, government subsidies) and typically linked to the individual's / corporate bank account.
-(applied for corporate or individual account proxy).",
-ExternalProxyAccountType1Code,CCPT,PassportNumber,"Unique government-issued Identification  used as account proxy to  identify the individual  (for example for government charges, road taxes, vaccination charges) and typically linked to the individual's bank account
-(applied for  individual account proxy).",
-ExternalProxyAccountType1Code,SHID,SchemeIdentificationNumber,"Account proxy issued by a payment scheme (applied for corporate or individual account proxy).
-Use cases: Any proxies issued by clearing systems, for example VPA (India), FPS Identifier (Hong Kong), Jompay (Malaysia) CCIN (Canada).",
+ExternalProxyAccountType1Code,NIDN,NationalIdentificationNumber,"Unique government-issued Identification  used as account proxy to  identify the individual  or corporate for example for public benefits, government subsidies) and typically linked to the individual's / corporate bank account. (applied for corporate or individual account proxy).",
+ExternalProxyAccountType1Code,CCPT,PassportNumber,"Unique government-issued Identification  used as account proxy to  identify the individual  (for example for government charges, road taxes, vaccination charges) and typically linked to the individual's bank account (applied for  individual account proxy).",
+ExternalProxyAccountType1Code,SHID,SchemeIdentificationNumber,"Account proxy issued by a payment scheme (applied for corporate or individual account proxy). Use cases: Any proxies issued by clearing systems, for example VPA (India), FPS Identifier (Hong Kong), Jompay (Malaysia) CCIN (Canada).",
 ExternalProxyAccountType1Code,SOSE,SocialSecurityNumber,Unique government-issued Identification  used as account proxy to identify the individual  (for example for public benefits) and typically linked to the individual's bank account (applied for individual account proxy).,
-ExternalProxyAccountType1Code,TOKN,TokenIdentification,"Electronic Identification used, for example, to mask an account number as a means of data secrecy.
-(applied for corporate or individual account proxy).",
+ExternalProxyAccountType1Code,TOKN,TokenIdentification,"Electronic Identification used, for example, to mask an account number as a means of data secrecy. (applied for corporate or individual account proxy).",
 ExternalProxyAccountType1Code,UBIL,UtilitiesSubscriptionIdentification,"Subscriber Identification for utilities and services. As opposed to a biller Identification, this identification is used for the subscriber of the service (applied for corporate or individual account proxy).",
 ExternalProxyAccountType1Code,VIPN,VehicleIdentificationPlateNumber,"Account proxy for receiving insurance claims, pay insurance premium, road tax payments, traffic tickets etc.(applied for corporate or individual account proxy).",
 ExternalProxyAccountType1Code,BIID,BillerSubscriberIdentification,"Billers of specific utilities could register for a Biller Identification as supported in the clearing scheme, and use this identification for collections (applied for corporate account proxy).",
-ExternalPurpose1Code,BKDF,BankLoanDelayedDrawFunding,"Delayed draw funding. Certain issuers may utilize delayed draw loans whereby the lender is committed to fund cash
-within a specified period once a call is made by the issuer. The lender receives a fee for entering into such a
-commitment",
-ExternalPurpose1Code,BKFE,BankLoanFees,"Bank loan fees. Cash activity related to specific bank loan fees, including (a) agent / assignment fees; (b) amendment fees; (c) commitment fees; (d) consent fees; (e) cost of carry fees; (f) delayed compensation fees; (g)
-facility fees; (h) fronting fees; (i) funding fees; (j) letter of credit assignment fees",CHAPS
-ExternalPurpose1Code,BKFM,BankLoanFundingMemo,"Bank loan funding memo. Net cash movement for the loan contract final notification when sent separately from the
-loan contract final notification instruction.",
+ExternalPurpose1Code,BKDF,BankLoanDelayedDrawFunding,"Delayed draw funding. Certain issuers may utilize delayed draw loans whereby the lender is committed to fund cash within a specified period once a call is made by the issuer. The lender receives a fee for entering into such a commitment",
+ExternalPurpose1Code,BKFE,BankLoanFees,"Bank loan fees. Cash activity related to specific bank loan fees, including (a) agent / assignment fees; (b) amendment fees; (c) commitment fees; (d) consent fees; (e) cost of carry fees; (f) delayed compensation fees; (g) facility fees; (h) fronting fees; (i) funding fees; (j) letter of credit assignment fees",CHAPS
+ExternalPurpose1Code,BKFM,BankLoanFundingMemo,"Bank loan funding memo. Net cash movement for the loan contract final notification when sent separately from the loan contract final notification instruction.",
 ExternalPurpose1Code,BKIP,BankLoanAccruedInterestPayment,Accrued interest payments. Specific to bank loans.,CHAPS
 ExternalPurpose1Code,BKPP,BankLoanPrincipalPaydown,Principal paydowns. Specific to bank loans,CHAPS
 ExternalPurpose1Code,CBLK,CardBulkClearing,"A Service that is settling money for a bulk of card transactions, while referring to a specific transaction file or other information like terminal ID, card acceptor ID or other transaction details.",
 ExternalPurpose1Code,CDCB,CardPaymentWithCashBack,Purchase of Goods and Services with additional Cash disbursement at the POI (Cashback),
 ExternalPurpose1Code,CDCD,CashDisbursementCashSettlement,ATM Cash Withdrawal in an unattended or Cash Advance in an attended environment (POI or bank counter),
 ExternalPurpose1Code,CDCS,CashDisbursementWithSurcharging,ATM Cash Withdrawal in an unattended or Cash Advance in an attended environment (POI or bank counter) with surcharging.,
-ExternalPurpose1Code,CDDP,CardDeferredPayment,"A combined service which enables the card acceptor to perform an authorisation for a temporary amount and a completion for the final amount within a limited time frame. Deferred Payment is only available in the unattended environment.
-Examples where this service is widely used are unattended petrol pumps and phone booths",
+ExternalPurpose1Code,CDDP,CardDeferredPayment,"A combined service which enables the card acceptor to perform an authorisation for a temporary amount and a completion for the final amount within a limited time frame. Deferred Payment is only available in the unattended environment. Examples where this service is widely used are unattended petrol pumps and phone booths",
 ExternalPurpose1Code,CDOC,OriginalCredit,"A service which allows the card acceptor to effect a credit to a cardholder' account. Unlike a Merchant Refund, an Original Credit is not preceded by a card payment. This service is used for example for crediting winnings from gaming.",
 ExternalPurpose1Code,CDQC,QuasiCash,Purchase of Goods which are equivalent to cash like coupons in casinos.,
 ExternalPurpose1Code,ETUP,EPurseTopUp,Transaction is related to a Service that is first reserving money from a card account and then is loading an e-purse application by this amount.,
@@ -345,8 +325,7 @@ ExternalPurpose1Code,FWBC,ForwardBrokerOwnedCashCollateral,"Cash collateral paym
 ExternalPurpose1Code,FWCC,ForwardClientOwnedCashCollateral,"Cash collateral payment against a Master Forward Agreement (MFA) where the cash is owned and may be used by the client when returned. Includes any instruments with a forward settling date such TBAs, repurchase agreements and bond forwards",
 ExternalPurpose1Code,FWSB,ForwardBrokerOwnedCashCollateralSegregated,"Any cash payment related to the collateral for a Master Agreement forward, which is segregated, and not available for use by the client. Example master agreement forwards include TBA, repo and Bond Forwards.",
 ExternalPurpose1Code,FWSC,ForwardClientOwnedSegregatedCashCollateral,"Any cash payment related to the collateral for a Master agreement forward, which is owned by the client and is available for use by the client when it is returned to them from the segregated account. Example master agreement forwards include TBA, repo and Bond Forwards.",
-ExternalPurpose1Code,MARG,DailyMarginOnListedDerivatives,"Daily margin on listed derivatives – not segregated as collateral associated with an FCM agreement. Examples
-include listed futures and options margin payments; premiums for listed options not covered in the MT54X message",
+ExternalPurpose1Code,MARG,DailyMarginOnListedDerivatives,"Daily margin on listed derivatives – not segregated as collateral associated with an FCM agreement. Examples include listed futures and options margin payments; premiums for listed options not covered in the MT54X message",
 ExternalPurpose1Code,MBSB,MBSBrokerOwnedCashCollateral,"MBS Broker Owned Segregated (40Act/Dodd Frank) Cash Collateral - Any cash payment related to the collateral for a Mortgage Back Security, which is segregated, and not available for use by the client.",
 ExternalPurpose1Code,MBSC,MBSClientOwnedCashCollateral,"MBS Client Owned Cash Segregated (40Act/Dodd Frank) Cash Collateral - Any cash payment related to the collateral for a Mortgage Back Security, which is owned by the client and is available for use by the client when it is returned to them from the segregated account",
 ExternalPurpose1Code,MGCC,FuturesInitialMargin,Initial futures margin. Where such payment is owned by the client and is available for use by them on return,
@@ -359,8 +338,7 @@ ExternalPurpose1Code,OPSC,OTCOptionClientOwnedCashSegregatedCashCollateral,"Opti
 ExternalPurpose1Code,OPTN,FXOption,Cash collateral related to trading of option on Foreign Exchange.,
 ExternalPurpose1Code,OTCD,OTCDerivatives,Cash collateral related to Over-the-counter (OTC) Derivatives in general for example contracts which are traded and privately negotiated.,CHAPS
 ExternalPurpose1Code,REPO,RepurchaseAgreement,Cash collateral related to a repurchase agreement transaction.,CHAPS
-ExternalPurpose1Code,RPBC,BilateralRepoBrokerOwnedCollateral,"Bi-lateral repo broker owned collateral associated with a repo master agreement – GMRA or MRA Master Repo
-Agreements",
+ExternalPurpose1Code,RPBC,BilateralRepoBrokerOwnedCollateral,"Bi-lateral repo broker owned collateral associated with a repo master agreement – GMRA or MRA Master Repo Agreements",
 ExternalPurpose1Code,RPCC,RepoClientOwnedCollateral,Repo client owned collateral associated with a repo master agreement – GMRA or MRA Master Repo Agreements,
 ExternalPurpose1Code,RPSB,BilateralRepoBrokerOwnedSegregatedCashCollateral,Bi-lateral repo broker owned segregated cash collateral associated with a repo master agreement,
 ExternalPurpose1Code,RPSC,BilateralRepoClientOwnedSegregatedCashCollateral,Repo client owned segregated collateral associated with a repo master agreement,
@@ -374,19 +352,11 @@ ExternalPurpose1Code,SHCC,ClientOwnedCollateralShortSale,Short Sale client owned
 ExternalPurpose1Code,SHSL,ShortSell,Cash Collateral related to a Short Sell,
 ExternalPurpose1Code,SLEB,SecuritiesLendingAndBorrowing,Cash collateral related to Securities lending and borrowing.,CHAPS
 ExternalPurpose1Code,SLOA,SecuredLoan,Cash collateral related to a Secured loan.,
-ExternalPurpose1Code,SWBC,SwapBrokerOwnedCashCollateral,"Cash collateral payment for swaps associated with an ISDA agreement. . Where such payment is segregated and
-not available for use by the client. Includes any cash collateral payments made under the terms of a CSA agreement
-for instruments such as swaps and FX forwards.",
-ExternalPurpose1Code,SWCC,SwapClientOwnedCashCollateral,"Cash collateral payment for swaps associated with an ISDA agreement. Where such payment is not segregated and
-is available for use by the client upon return. Includes any cash collateral payments made under the terms of a CSA
-agreement for instruments such as swaps and FX forwards.",
+ExternalPurpose1Code,SWBC,SwapBrokerOwnedCashCollateral,"Cash collateral payment for swaps associated with an ISDA agreement. Where such payment is segregated and not available for use by the client. Includes any cash collateral payments made under the terms of a CSA agreement for instruments such as swaps and FX forwards.",
+ExternalPurpose1Code,SWCC,SwapClientOwnedCashCollateral,"Cash collateral payment for swaps associated with an ISDA agreement. Where such payment is not segregated and is available for use by the client upon return. Includes any cash collateral payments made under the terms of a CSA agreement for instruments such as swaps and FX forwards.",
 ExternalPurpose1Code,SWPT,Swaption,Cash collateral related to an option on interest rate swap.,
-ExternalPurpose1Code,SWSB,SwapsBrokerOwnedSegregatedCashCollateral,"Swaps Broker Owned Segregated Cash Collateral - Any cash payment related to the collateral for Swap margin ,
-which is segregated, and not available for use by the client. This includes any collateral identified in a CSA
-agreement such as Swap or FX Forward collateral.",
-ExternalPurpose1Code,SWSC,SwapsClientOwnedSegregatedCashCollateral,"Swaps Client Owned Segregated Cash Collateral - Any cash payment related to the collateral for Swap margin,
-which is owned by the client and is available for use by the client when returned from the segregated account. This
-includes any collateral identified in a CSA agreement such as Swap or FX Forward collateral.",
+ExternalPurpose1Code,SWSB,SwapsBrokerOwnedSegregatedCashCollateral,"Swaps Broker Owned Segregated Cash Collateral - Any cash payment related to the collateral for Swap margin, which is segregated, and not available for use by the client. This includes any collateral identified in a CSA agreement such as Swap or FX Forward collateral.",
+ExternalPurpose1Code,SWSC,SwapsClientOwnedSegregatedCashCollateral,"Swaps Client Owned Segregated Cash Collateral - Any cash payment related to the collateral for Swap margin, which is owned by the client and is available for use by the client when returned from the segregated account. This includes any collateral identified in a CSA agreement such as Swap or FX Forward collateral.",
 ExternalPurpose1Code,TBAS,ToBeAnnounced,Cash collateral related to a To Be Announced (TBA),
 ExternalPurpose1Code,TBBC,TBABrokerOwnedCashCollateral,Cash collateral payment (segregated) for TBA securities associated with a TBA Master Agreement. Where such payment is segregated and not available for use by the client.,
 ExternalPurpose1Code,TBCC,TBAClientOwnedCashCollateral,Cash collateral payment (for use by client)for TBA securities associated with a TBA Master Agreement. Where such payment is not segregated and is available for use by the client upon return.,
@@ -491,8 +461,7 @@ ExternalPurpose1Code,RRCT,ReimbursementReceivedCreditTransfer,Transaction is rel
 ExternalPurpose1Code,RRTP,RelatedRequestToPay,Transaction is related to a Request to Pay.,
 ExternalPurpose1Code,RVPM,ReceiveAgainstPayment,Code used to pre-advise the account servicer of a forthcoming receive against payment instruction.,
 ExternalPurpose1Code,SLPI,PaymentSlipInstruction,Transaction is payment of a well formatted payment slip.,
-ExternalPurpose1Code,SPLT,SplitPayments,"Split payments. To be used when cash and security movements for a security trade settlement are instructed
-separately.",
+ExternalPurpose1Code,SPLT,SplitPayments,"Split payments. To be used when cash and security movements for a security trade settlement are instructed separately.",
 ExternalPurpose1Code,STDY,Study,Transaction is related to a payment of study/tuition costs.,
 ExternalPurpose1Code,TBAN,TBAPairOffNetting,TBA pair-off cash wire net movement,
 ExternalPurpose1Code,TBIL,TelecommunicationsBill,Transaction is related to a payment of telecommunications related bill.,
@@ -577,12 +546,10 @@ ExternalPurpose1Code,SPSP,SalaryPensionSumPayment,Salary or pension payment for 
 ExternalPurpose1Code,SSBE,SocialSecurityBenefit,"Transaction is a social security benefit, ie payment made by a government to support individuals.",Both
 ExternalPurpose1Code,LBIN,LendingBuyInNetting,"Net payment related to a buy-in. When an investment manager is bought in on a sell trade that fails due to a failed securities lending recall, the IM may seize the underlying collateral to pay for the buy-in. Any difference between the value of the collateral and the sell proceeds would be paid or received under this code",
 ExternalPurpose1Code,LCOL,LendingCashCollateralFreeMovement,Free movement of cash collateral. Cash collateral paid by the borrower is done separately from the delivery of the shares at loan opening or return of collateral done separately from return of the loaned security. Note: common when the currency of the security is different the currency of the cash collateral.,
-ExternalPurpose1Code,LFEE,LendingFees,"Fee payments, other than rebates, for securities lending. Includes (a) exclusive fees; (b) transaction fees; (c)
-custodian fees; (d) minimum balance fees",
+ExternalPurpose1Code,LFEE,LendingFees,"Fee payments, other than rebates, for securities lending. Includes (a) exclusive fees; (b) transaction fees; (c) custodian fees; (d) minimum balance fees",
 ExternalPurpose1Code,LMEQ,LendingEquityMarkedToMarketCashCollateral,Cash collateral payments resulting from the marked-to-market of a portfolio of loaned equity securities,
 ExternalPurpose1Code,LMFI,LendingFixedIncomeMarkedToMarketCashCollateral,Cash collateral payments resulting from the marked-to-market of a portfolio of loaned fixed income securities,
-ExternalPurpose1Code,LMRK,LendingUnspecifiedTypeOfMarkedToMarketCashCollateral,"Cash collateral payments resulting from the marked-to-market of a portfolio of loaned securities where the instrument
-types are not specified",
+ExternalPurpose1Code,LMRK,LendingUnspecifiedTypeOfMarkedToMarketCashCollateral,"Cash collateral payments resulting from the marked-to-market of a portfolio of loaned securities where the instrument types are not specified",
 ExternalPurpose1Code,LREB,LendingRebatePayments,Securities lending rebate payments,CHAPS
 ExternalPurpose1Code,LREV,LendingRevenuePayments,Revenue payments made by the lending agent to the client,CHAPS
 ExternalPurpose1Code,LSFL,LendingClaimPayment,Payments made by a borrower to a lending agent to satisfy claims made by the investment manager related to sell fails from late loan recall deliveries,
@@ -644,14 +611,13 @@ ExternalPurpose1Code,CPEN,CashPenalties,"Cash penalties related to securities tr
 ExternalPurpose1Code,DEPD,DependentSupportPayment,"Transaction is related to a payment concerning dependent support, for example child support or support for a person substantially financially dependent on the support provider.",
 ExternalPurpose1Code,RETL,RetailPayment,Retail payment including e-commerce and online shopping.,
 ExternalPurpose1Code,DEBT,ChargesBorneByDebtor,Purpose of payment is the settlement of charges payable by the debtor in relation to an underlying customer credit transfer.,
-ExternalSystemBalanceType1Code,ADJT,Adjustment,"Average balance to be held in the settlement account at the end of each day in order to fulfil the reserve due.
-The approximation will be always made rounding up.",
+ExternalPurpose1Code,CRYP,CryptoTransaction,Transaction is for the purchase of cryptocurrency.,
+ExternalSystemBalanceType1Code,ADJT,Adjustment,"Average balance to be held in the settlement account at the end of each day in order to fulfil the reserve due. The approximation will be always made rounding up.",
 ExternalSystemBalanceType1Code,ADWR,AvailableDMVForDiscountWindowRepo,Balance represents the available discounted market value for discount window repo.,
 ExternalSystemBalanceType1Code,AIDR,AvailableDMVForIntradayRepo,Balance represents the available discounted market value for intraday repo.,
 ExternalSystemBalanceType1Code,AVLB,Available,Balance of money or securities that is at the disposal of the account owner on the date specified.,
 ExternalSystemBalanceType1Code,BLCK,Blocked,"Balance representing the regulatory reserve that a financial institution must have with the account servicing institution, such as the minimum credit balance a financial institution is to keep with its Central Bank for mandatory reserve purposes. In some countries, a blocked balance is known as a 'reserve' balance.",
-ExternalSystemBalanceType1Code,BLOC,BlockedTrades,"Balance representing the projected total of all cash legs for trades settling via a central securities depository that have been matched but blocked in order to not settle. These blocked trades are included in the calculation for settlement (for example to avoid overdrafts).
-Usage rule: Blocking can be done by account owner or its counterparties. Usually this is done to chain transactions or to prioritise other trades. Blocked trades have an indicator that prevents the transactions from settling. Once matched, they can settle whenever the freeze is lifted. In this case they will move to FSET. Lifting the freeze can happen anytime during the day and the transaction will be settling in the next settlement cycle which can be the same day if the (international) central securities depository's operates several settlements cycles per day.",
+ExternalSystemBalanceType1Code,BLOC,BlockedTrades,"Balance representing the projected total of all cash legs for trades settling via a central securities depository that have been matched but blocked in order to not settle. These blocked trades are included in the calculation for settlement (for example to avoid overdrafts). Usage rule: Blocking can be done by account owner or its counterparties. Usually this is done to chain transactions or to prioritise other trades. Blocked trades have an indicator that prevents the transactions from settling. Once matched, they can settle whenever the freeze is lifted. In this case they will move to FSET. Lifting the freeze can happen anytime during the day and the transaction will be settling in the next settlement cycle which can be the same day if the (international) central securities depository's operates several settlements cycles per day.",
 ExternalSystemBalanceType1Code,BOOK,Book,Balance that is registered in the books of the account servicer.,
 ExternalSystemBalanceType1Code,BSCC,BulkSettlementCMUPCredit,Balance represents the total of the bulk settlement and central moneymarkets unit processor credit.,
 ExternalSystemBalanceType1Code,BSCD,BulkSettlementCMUPDebit,Balance represents the total of the bulk settlement and central moneymarkets unit processor debit.,
@@ -688,27 +654,19 @@ ExternalSystemBalanceType1Code,LTSF,LiquidityTransfer,Balance composed of the su
 ExternalSystemBalanceType1Code,MSTR,Master,Balance of the identified account plus the balance of all of its subaccounts.,
 ExternalSystemBalanceType1Code,NOTE,Noted,Balance representing the amount that a financial institution has set aside for a specific reason and which is therefore not available.,
 ExternalSystemBalanceType1Code,NSET,NonSettledSecurities,Balance representing the cash equivalent of all non-settled securities transactions.,
-ExternalSystemBalanceType1Code,OPNG,Opening,"Book balance of the account at the beginning of the account servicer's business day. It always equals the closing book balance from the previous business day. 
-Note: the available balance at the beginning of the account servicer's business day may be different from the closing book balance from the previous business day.",
+ExternalSystemBalanceType1Code,OPNG,Opening,"Book balance of the account at the beginning of the account servicer's business day. It always equals the closing book balance from the previous business day.  Note: the available balance at the beginning of the account servicer's business day may be different from the closing book balance from the previous business day.",
 ExternalSystemBalanceType1Code,OTCC,CCPGuaranteedOTCTransactions,"Balance representing the Forecast of the total of all cash-legs of transactions 'over the counter' (OTC), going through central counter party (CCP) functions.",
 ExternalSystemBalanceType1Code,OTCG,ForecastOTCTransactions,Balance representing the forecast of the total of all cash legs of transactions traded 'over the counter' (OTC).,
 ExternalSystemBalanceType1Code,OTCN,NonCCPGuaranteedOTCTransactions,Balance representing the forecast of the total of all cash legs of transactions traded 'over the counter' (OTC) not going through central counter party (CCP) functions.,
 ExternalSystemBalanceType1Code,OTHB,OtherBlockedTrades,Balance representing the projected total of all cash legs for trades settling via a central securities depository that have been matched but blocked in order to not settle. These blocked transactions are not included in the calculation for settlement.,
 ExternalSystemBalanceType1Code,PDNG,Pending,"Balance of securities pending delivery, such as the orders to sell securities have been executed but settlement of the open transactions has not been confirmed.",
-ExternalSystemBalanceType1Code,PIPO,PayInPayOut,"Balance representing the fictive forecast of automated direct debits or payment based on standing arrangements between a central securities depository and the user.
-
-
-
-Usage: Pay-Ins and Pay-Outs can be different based on individual payment instructions or available funds.",
+ExternalSystemBalanceType1Code,PIPO,PayInPayOut,"Balance representing the fictive forecast of automated direct debits or payment based on standing arrangements between a central securities depository and the user. Usage: Pay-Ins and Pay-Outs can be different based on individual payment instructions or available funds.",
 ExternalSystemBalanceType1Code,PRAV,ProgressiveAverage,Average of the daily balances on the account used to fulfil the reserve requirements calculated from the beginning of the maintenance period.,
 ExternalSystemBalanceType1Code,PYMT,Payment,"Balance representing the sum of entries as a result of payments processing. Entries relating to fees, interest, or other movements not a result of payments sent or received by the account owner are not included.",
 ExternalSystemBalanceType1Code,REJB,TotalRejected,Balance representing the total of the payments that have been rejected.,
 ExternalSystemBalanceType1Code,REPC,CMUPRepoCredit,Balance represents the total of the central moneymarkets unit processor repo credits.,
 ExternalSystemBalanceType1Code,REPD,CMUPRepoDebit,Balance represents the total of the central moneymarkets unit processor repo debits.,
-ExternalSystemBalanceType1Code,REST,Restricted,"Balance of cash that may only be used under certain conditions.
-
-Balance type is used to block securities/cash in the client account for example, when related to specific corporate actions, the holding is under the direct control of the system paying agent, who is the only one who can transfer securities out of this balance type.
-Also known as the ""escrow balance"" or ""sequestered balance"".",
+ExternalSystemBalanceType1Code,REST,Restricted,"Balance of cash that may only be used under certain conditions. Balance type is used to block securities/cash in the client account for example, when related to specific corporate actions, the holding is under the direct control of the system paying agent, who is the only one who can transfer securities out of this balance type. Also known as the ""escrow balance"" or ""sequestered balance"".",
 ExternalSystemBalanceType1Code,SAPC,SAPDirectCreditAmount,Balance represents the settlement account processor direct credit amount.,
 ExternalSystemBalanceType1Code,SAPD,SAPDirectDebitAmount,Balance represents the settlement account processor direct debit amount.,
 ExternalSystemBalanceType1Code,SAPP,SAPQueueAmount,Balance represents the settlement account processor queue amount.,
@@ -729,3 +687,7 @@ ExternalTaxAmountType1Code,CNTY,CountyTax,Tax accessed by county jurisdications 
 ExternalTaxAmountType1Code,LOCL,LocalTax,Tax accessed by local jurisdications within a country.,
 ExternalTaxAmountType1Code,PROV,ProvinceTax,Tax accessed by province jurisdications within a country.,
 ExternalTaxAmountType1Code,STAT,StateTax,Tax accessed by state jurisdications within a country.,
+ExternalMandateStatus1Code,ACTV,Active,The mandate is active.,
+ExternalMandateStatus1Code,CANC,Cancelled,The mandate is cancelled.,
+ExternalMandateStatus1Code,EXPI,Expired,The mandate has passed the end date.,
+ExternalMandateStatus1Code,SUSP,Suspended,The mandate is put on hold.,
