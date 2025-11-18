@@ -1,23 +1,13 @@
 Code Set,Code Value,Code Name,Code Definition,HTTP Status Category,Description
-OBExternalStatusReason1Code,U001,UK.OBIE.Field.Expected,Field is expected,400,"For the scenario, when a field-value is not provided in the payload, that is expected in combination with preceding field-value pairs.
-The corresponding path must be populated with the path of the unexpected field.
-E.g. ExchangeRate must be specified with Agreed RateType. ExchangeRate should be specified in the path element. InstructionPriority must be specified with Agreed RateType. InstructionPriority should be specified in the path element.
-"
+OBExternalStatusReason1Code,U001,UK.OBIE.Field.Expected,Field is expected,400,"For the scenario, when a field-value is not provided in the payload, that is expected in combination with preceding field-value pairs. The corresponding path must be populated with the path of the unexpected field. E.g. ExchangeRate must be specified with Agreed RateType. ExchangeRate should be specified in the path element. InstructionPriority must be specified with Agreed RateType. InstructionPriority should be specified in the path element."
 OBExternalStatusReason1Code,U002,UK.OBIE.Field.Invalid,Field is invalid,400,"An invalid value is supplied in one of the fields, or the length of value supplied is larger than the corresponding maximum field length in ASPSP's domain. Reference of the invalid field should be provided in the path field, and the URL field may have the link to a website explaining the valid behaviour. The error message should describe the problem in detail."
 OBExternalStatusReason1Code,U003,UK.OBIE.Field.InvalidDate,Field has a invalid date,400,"An invalid date is supplied e.g. when a future date is expected, a date in past or current date is supplied. The message can specify the actual problem with the date. The reference of the invalid field should be provided in the path field, and URL field may have the link to a website explaining the valid behaviour"
-OBExternalStatusReason1Code,U004,UK.OBIE.Field.Missing,A required field is missing,400,"A mandatory field, required for the API, is missing from the payload. This error code can be used, if it is not already captured under the validation for U010 (UK.OBIE.Resource.InvalidFormat)
-Reference of the missing field should be provided in the path field, and URL field may have the link to a website explaining the valid behaviour"
-OBExternalStatusReason1Code,U005,UK.OBIE.Field.Unexpected,A value is provided when not required,400,"For the scenario, when a field-value is provided in the payload, that is not expected in combination with preceding field-value pairs. E.g.
-ContractIdentification must not be specified with [Actual/Indicative] RateType.
-ContractIdentification should be specified in the path element ExchangeRate must not be specified with [Actual/Indicative] RateType.
-ExchangeRate should be specified in the path element.
-InstructionPriority must not be specified with LocalInstrument. InstructionPriority should be specified in the path element."
+OBExternalStatusReason1Code,U004,UK.OBIE.Field.Missing,A required field is missing,400,"A mandatory field, required for the API, is missing from the payload. This error code can be used, if it is not already captured under the validation for U010 (UK.OBIE.Resource.InvalidFormat). Reference of the missing field should be provided in the path field, and URL field may have the link to a website explaining the valid behaviour"
+OBExternalStatusReason1Code,U005,UK.OBIE.Field.Unexpected,A value is provided when not required,400,"For the scenario, when a field-value is provided in the payload, that is not expected in combination with preceding field-value pairs. E.g. ContractIdentification must not be specified with [Actual/Indicative] RateType. ContractIdentification should be specified in the path element. ExchangeRate must not be specified with [Actual/Indicative] RateType. ExchangeRate should be specified in the path element. InstructionPriority must not be specified with LocalInstrument. InstructionPriority should be specified in the path element."
 OBExternalStatusReason1Code,U006,UK.OBIE.Header.Invalid,Header is invalid,400,An invalid value is supplied in the HTTP header. The HTTP Header should be specified in the path element.
 OBExternalStatusReason1Code,U007,UK.OBIE.Header.Missing,Header is missing,400,A required HTTP header has not been provided. The HTTP Header should be specified in the path element.
 OBExternalStatusReason1Code,U008,UK.OBIE.Resource.ConsentMismatch,Mismatch between staged consent and payment order request,400,"{payment-order-consent} and {payment-order} resource mismatch. For example, if an element in the resource’s Initiation or Risk section does not match the consent section. The path element should be populated with the field of the resource that does not match the consent."
-OBExternalStatusReason1Code,U009,UK.OBIE.Resource.InvalidConsentStatus,Unexpected consent status ,400,"The resource’s associated consent is not in a status that would allow the resource to be created, or a request to be executed.
-E.g., if a consent resource had a status of AWAU (AwaitingAuthorisation) or RJCT(Rejected), a resource could not be created against this consent.
-The path element should be populated with the field in the consent resource that is invalid."
+OBExternalStatusReason1Code,U009,UK.OBIE.Resource.InvalidConsentStatus,Unexpected consent status ,400,"The resource’s associated consent is not in a status that would allow the resource to be created, or a request to be executed. E.g., if a consent resource had a status of AWAU (AwaitingAuthorisation) or RJCT(Rejected), a resource could not be created against this consent. The path element should be populated with the field in the consent resource that is invalid."
 OBExternalStatusReason1Code,U010,UK.OBIE.Resource.InvalidFormat,Invalid schema,400,"When the Payload schema does not match to the endpoint, e.g., /domestic-payments endpoint is called with a JSON Payload, which cannot be parsed into a class such as OBWriteDomestic1"
 OBExternalStatusReason1Code,U011,UK.OBIE.Resource.NotFound,Resource cannot be found,400,Returned when a resource with the specified Id does not exist (and hence could not be operated upon).
 OBExternalStatusReason1Code,U012,UK.OBIE.Rules.AfterCutOffDateTime,Payment received after cutoff date and time,400,{payment-order} consent / resource received after CutOffDateTime
@@ -29,27 +19,16 @@ OBExternalStatusReason1Code,U017,UK.OBIE.Signature.MissingClaim,Invalid or missi
 OBExternalStatusReason1Code,U018,UK.OBIE.Signature.Malformed,Signature is malformed,400,The x-jws-signature in the request header was malformed and could not be parsed as a valid JWS.
 OBExternalStatusReason1Code,U019,UK.OBIE.Signature.Missing,Missing information related to signature,400,"The API request expected an x-jws-signature in the header, but it was missing."
 OBExternalStatusReason1Code,U020,UK.OBIE.Signature.Unexpected,Signature was not expected in header but was provided,400,"The API request was not expecting to receive an x-jws-signature in the header, but the TPP made a request that included an x-jws-signature."
-OBExternalStatusReason1Code,U021,UK.OBIE.Unsupported.AccountIdentifier,Unsupported account identified has been provided,400,"The account identifier is unsupported for the given scheme.
-The path element should be populated with the path of the AccountIdentifier."
-OBExternalStatusReason1Code,U022,UK.OBIE.Unsupported.AccountSecondaryIdentifier,Unsupported secondary account identified has been provided,400,"The account secondary identifier is unsupported for the given scheme.
-The path element should be populated with the path of the AccountSecondaryIdentifier."
-OBExternalStatusReason1Code,U023,UK.OBIE.Unsupported.Currency,Unsupported currency is provided. Also use U002 (UK.OBIE.Field.Invalid) or provide path.,400,"The currency is not supported. Use U002 (UK.OBIE.Field.Invalid) for invalid Currency.
-The path element should be populated with the path of the Currency.
-The URL should be populated with a link to ASPSP documentation listing out the supported currencies."
-OBExternalStatusReason1Code,U024,UK.OBIE.Unsupported.EventType,Unsupported event type,400,"Event Type is not supported.
-The path element should be populated with the path of the EventType.
-The URL should be populated with a link to ASPSP documentation listing out the supported Event Types."
-OBExternalStatusReason1Code,U025,UK.OBIE.Unsupported.Frequency,Unsupported frequency,400,"Frequency is not supported.
-The path element should be populated with the path of the Frequency.
-The URL should be populated with a link to ASPSP documentation listing out the supported frequencies."
-OBExternalStatusReason1Code,U026,UK.OBIE.Unsupported.LocalInstrument,Unsupported localInstrument,400,"LocalInstrument is not supported by the ASPSP.
-The path element should be populated with the path of the LocalInstrument.
-The URL should be populated with a link to ASPSP documentation listing out the supported local instruments."
+OBExternalStatusReason1Code,U021,UK.OBIE.Unsupported.AccountIdentifier,Unsupported account identified has been provided,400,"The account identifier is unsupported for the given scheme. The path element should be populated with the path of the AccountIdentifier."
+OBExternalStatusReason1Code,U022,UK.OBIE.Unsupported.AccountSecondaryIdentifier,Unsupported secondary account identified has been provided,400,"The account secondary identifier is unsupported for the given scheme. The path element should be populated with the path of the AccountSecondaryIdentifier."
+OBExternalStatusReason1Code,U023,UK.OBIE.Unsupported.Currency,Unsupported currency is provided. Also use U002 (UK.OBIE.Field.Invalid) or provide path.,400,"The currency is not supported. Use U002 (UK.OBIE.Field.Invalid) for invalid Currency. The path element should be populated with the path of the Currency. The URL should be populated with a link to ASPSP documentation listing out the supported currencies."
+OBExternalStatusReason1Code,U024,UK.OBIE.Unsupported.EventType,Unsupported event type,400,"Event Type is not supported. The path element should be populated with the path of the EventType. The URL should be populated with a link to ASPSP documentation listing out the supported Event Types."
+OBExternalStatusReason1Code,U025,UK.OBIE.Unsupported.Frequency,Unsupported frequency,400,"Frequency is not supported. The path element should be populated with the path of the Frequency. The URL should be populated with a link to ASPSP documentation listing out the supported frequencies."
+OBExternalStatusReason1Code,U026,UK.OBIE.Unsupported.LocalInstrument,Unsupported localInstrument,400,"LocalInstrument is not supported by the ASPSP. The path element should be populated with the path of the LocalInstrument. The URL should be populated with a link to ASPSP documentation listing out the supported local instruments."
 OBExternalStatusReason1Code,U027,UK.OBIE.Unsupported.Scheme,Unsupported scheme,400,Identification scheme is not supported. The path element should be populated with the path of the scheme. The URL should be populated with a link to ASPSP documentation listing out the supported schemes.
 OBExternalStatusReason1Code,U028,UK.OBIE.Reauthenticate,Reauthentication is required by PSU,403,The ASPSP must use this error code in Error Response to indicate that re-authentication by the PSU is required to process the request.
 OBExternalStatusReason1Code,U029,UK.OBIE.Rules.ResourceAlreadyExists,Duplicate resource submitted,409,"The ASPSP must use this error code in Error Response, to indicate that a resource with same parameters already exists, or in a state that doesn't allow requested operation."
-OBExternalStatusReason1Code,U000,UK.OBIE.UnexpectedError,Can use this in conjunction with NARR code to specific the specific unexpected error,5xx,"An error code that can be used, when an unexpected error occurs.
-The ASPSP must populate the message with a meaningful error description, without revealing sensitive information."
+OBExternalStatusReason1Code,U000,UK.OBIE.UnexpectedError,Can use this in conjunction with NARR code to specific the specific unexpected error,5xx,"An error code that can be used, when an unexpected error occurs. The ASPSP must populate the message with a meaningful error description, without revealing sensitive information."
 OBInternalAccountType1Code,Personal,Personal,Specifies that the type of account is personal.,,
 OBInternalAccountType1Code,Business,Business,Specifies that the type of account is business.,,
 OBInternalConsentStatus1Code,AWAU,Awaiting Authorisation,The consent resource is awaiting PSU authorisation.,,
@@ -63,15 +42,11 @@ ExternalPaymentTransactionStatus1Code,INFA,InitiationFailed,Standing order has b
 ExternalPaymentTransactionStatus1Code,INCO,InitiationCompleted,Standing order has been setup successfully and the individual payment has been successfully completed. ,,
 ExternalPaymentGroupStatus1Code,ACCP,AcceptedCustomerProfile,Preceding check of technical validation was successful. Customer profile check was also successful.,,
 ExternalPaymentGroupStatus1Code,ACCC,AcceptedSettlementCompletedCreditorAccount,Settlement on the creditor's account has been completed.,,
-ExternalPaymentGroupStatus1Code,ACSC,AcceptedSettlementCompletedDebitorAccount,"Settlement on the debtor's account has been completed.
-Usage : this can be used by the first agent to report to the debtor that the transaction has been completed. 
-Warning : this status is provided for transaction status reasons, not for financial information. It can only be used after bilateral agreement
-",,
+ExternalPaymentGroupStatus1Code,ACSC,AcceptedSettlementCompletedDebitorAccount,"Settlement on the debtor's account has been completed. Usage : this can be used by the first agent to report to the debtor that the transaction has been completed.  Warning : this status is provided for transaction status reasons, not for financial information. It can only be used after bilateral agreement",,
 ExternalPaymentGroupStatus1Code,ACSP,AcceptedSettlementInProcess,All preceding checks such as technical validation and customer profile were successful and therefore the payment initiation has been accepted for execution.,,
 ExternalPaymentGroupStatus1Code,ACTC,AcceptedTechnicalValidation,Authentication and syntactical and semantical validation are successful,,
 ExternalPaymentGroupStatus1Code,ACWC,AcceptedWithChange,"Instruction is accepted but a change will be made, such as date or remittance not sent.",,
-ExternalPaymentGroupStatus1Code,PART,PartiallyAccepted,"A number of transactions have been accepted, whereas another number of transactions have not yet achieved
-'accepted' status.",,
+ExternalPaymentGroupStatus1Code,PART,PartiallyAccepted,"A number of transactions have been accepted, whereas another number of transactions have not yet achieved 'accepted' status.",,
 ExternalPaymentGroupStatus1Code,PDNG,Pending,Payment initiation or individual transaction included in the payment initiation is pending. Further checks and status update will be performed.,,
 ExternalPaymentGroupStatus1Code,RCVD,Received,Payment initiation has been received by the receiving agent,,
 ExternalPaymentGroupStatus1Code,RJCT,Rejected,Payment initiation or individual transaction included in the payment initiation has been rejected.,,
@@ -109,17 +84,13 @@ OBExternalStatusReason1Code,U042,UK.OBIE.OtherReason,Use U042(UK.OBIE.OtherReaso
 ExternalPaymentTransactionStatus1Code,ACCC,AcceptedSettlementCompletedCreditorAccount,Settlement on the creditor's account has been completed.,,
 ExternalPaymentTransactionStatus1Code,ACCP,AcceptedCustomerProfile,Preceding check of technical validation was successful. Customer profile check was also successful.,,
 ExternalPaymentTransactionStatus1Code,ACFC,AcceptedFundsChecked,Preceding check of technical validation and customer profile was successful and an automatic funds check was positive.,,
-ExternalPaymentTransactionStatus1Code,ACSC,AcceptedSettlementCompletedDebitorAccount,"Settlement completed.
-Usage : this can be used by a Market Infrastructure reporting to Infrastructure Participant or an Account Servicer to Account Owner to report that the transaction account entry has been completed.
-Warning : this status is provided for transaction status reasons, not for financial information. It can only be used after bilateral agreement
-",,
+ExternalPaymentTransactionStatus1Code,ACSC,AcceptedSettlementCompletedDebitorAccount,"Settlement completed. Usage : this can be used by a Market Infrastructure reporting to Infrastructure Participant or an Account Servicer to Account Owner to report that the transaction account entry has been completed. Warning : this status is provided for transaction status reasons, not for financial information. It can only be used after bilateral agreement ",,
 ExternalPaymentTransactionStatus1Code,ACSP,AcceptedSettlementInProcess,All preceding checks such as technical validation and customer profile were successful and therefore the payment instruction has been accepted for execution.,,
 ExternalPaymentTransactionStatus1Code,ACTC,AcceptedTechnicalValidation,Authentication and syntactical and semantical validation are successful,,
 ExternalPaymentTransactionStatus1Code,ACWC,AcceptedWithChange,"Instruction is accepted but a change will be made, such as date or remittance not sent.",,
 ExternalPaymentTransactionStatus1Code,ACWP,AcceptedWithoutPosting,Payment instruction included in the credit transfer is accepted without being posted to the creditor customer’s account.,,
 ExternalPaymentTransactionStatus1Code,BLCK,Blocked,"Payment transaction previously reported with status 'ACWP' is blocked, for example, funds will neither be posted to the Creditor's account, nor be returned to the Debtor.",,
-ExternalPaymentTransactionStatus1Code,CANC,Cancelled,"Payment initiation has been successfully cancelled after having received a request for cancellation.
-Usage: code to be used in the context of APIs only.",,
+ExternalPaymentTransactionStatus1Code,CANC,Cancelled,"Payment initiation has been successfully cancelled after having received a request for cancellation. Usage: code to be used in the context of APIs only.",,
 ExternalPaymentTransactionStatus1Code,PATC,PartiallyAcceptedTechnicalCorrect,"Payment initiation needs multiple authentications, where some but not yet all have been performed. Syntactical and semantical validations are successful.",,
 ExternalPaymentTransactionStatus1Code,PDNG,Pending,Payment instruction is pending. Further checks and status update will be performed.,,
 ExternalPaymentTransactionStatus1Code,RCVD,Received,Payment instruction has been received.,,
@@ -181,17 +152,14 @@ OBFrequency6Code,NONE,Not known / Not available,When frequency is not available 
 OBExternalCashAccountType1Code,CACC,Current,Account used to post debits and credits when no specific account has been nominated.,,
 OBExternalCashAccountType1Code,CARD,CardAccount,Account used for credit card payments.,,
 OBExternalCashAccountType1Code,CASH,CashPayment,Account used for the payment of cash.,,
-OBExternalCashAccountType1Code,CHAR,Charges,"Account used for charges if different from the account for
-payment.",,
+OBExternalCashAccountType1Code,CHAR,Charges,"Account used for charges if different from the account for payment.",,
 OBExternalCashAccountType1Code,CISH,CashIncome,Account used for payment of income if different from the current cash account,,
-OBExternalCashAccountType1Code,COMM,Commission,"Account used for commission if different from the account
-for payment.",,
+OBExternalCashAccountType1Code,COMM,Commission,"Account used for commission if different from the account for payment.",,
 OBExternalCashAccountType1Code,CPAC,ClearingParticipantSettlementAccount,Account used to post settlement debit and credit entries on behalf of a designated Clearing Participant.,,
 OBExternalCashAccountType1Code,LLSV,LimitedLiquiditySavingsAccount,Account used for savings with special interest and withdrawal terms.  ,,
 OBExternalCashAccountType1Code,LOAN,Loan,Account used for loans.,,
 OBExternalCashAccountType1Code,MGLD,MarginalLending,Account used for a marginal lending facility.,,
-OBExternalCashAccountType1Code,MOMA,MoneyMarket,"Account used for money markets if different from the cash
-account.",,
+OBExternalCashAccountType1Code,MOMA,MoneyMarket,"Account used for money markets if different from the cash account.",,
 OBExternalCashAccountType1Code,NREX,NonResidentExternal,Account used for non-resident external.,,
 OBExternalCashAccountType1Code,ODFT,Overdraft,Account is used for overdrafts.,,
 OBExternalCashAccountType1Code,ONDP,OverNightDeposit,Account used for overnight deposits.,,
@@ -199,11 +167,9 @@ OBExternalCashAccountType1Code,OTHR,OtherAccount,Account not otherwise specified
 OBExternalCashAccountType1Code,SACC,Settlement,"Account used to post debit and credit entries, as a result of transactions cleared and settled through a specific clearing and settlement system.",,
 OBExternalCashAccountType1Code,SLRY,Salary,Accounts used for salary payments.,,
 OBExternalCashAccountType1Code,SVGS,Savings,Account used for savings.,,
-OBExternalCashAccountType1Code,TAXE,Tax,"Account used for taxes if different from the account for
-payment.",,
+OBExternalCashAccountType1Code,TAXE,Tax,"Account used for taxes if different from the account for payment.",,
 OBExternalCashAccountType1Code,TRAN,TransactingAccount,A transacting account is the most basic type of bank account that you can get. The main difference between transaction and cheque accounts is that you usually do not get a cheque book with your transacting account and neither are you offered an overdraft facility.,,
-OBExternalCashAccountType1Code,TRAS,CashTrading,"Account used for trading if different from the current cash
-account.",,
+OBExternalCashAccountType1Code,TRAS,CashTrading,"Account used for trading if different from the current cash account.",,
 OBExternalCashAccountType1Code,VACC,VirtualAccount,Account created virtually to facilitate collection and reconciliation.,,
 OBExternalCashAccountType1Code,NFCA,NonResidentForeignCurrencyAccount,Non-Resident Individual / Entity Foreign Current held domestically.,,
 OBExternalCashAccountType1Code,MORT,Mortgage Account,Account is used for mortgage account,,
@@ -214,14 +180,12 @@ OBExternalStatusReason1Code,AB03,AbortedSettlementTimeout,Settlement aborted due
 OBExternalStatusReason1Code,AB04,AbortedSettlementFatalError,Settlement process aborted due to a fatal error.   ,,
 OBExternalStatusReason1Code,AB05,TimeoutCreditorAgent,Transaction stopped due to timeout at the Creditor Agent.,,
 OBExternalStatusReason1Code,AB06,TimeoutInstructedAgent,Transaction stopped due to timeout at the Instructed Agent.,,
-OBExternalStatusReason1Code,AB07,OfflineAgent,"Agent of message is not online.
-Generic usage if it cannot be determined who exactly is not online.",,
+OBExternalStatusReason1Code,AB07,OfflineAgent,"Agent of message is not online. Generic usage if it cannot be determined who exactly is not online.",,
 OBExternalStatusReason1Code,AB08,OfflineCreditorAgent,Creditor Agent is not online.,,
 OBExternalStatusReason1Code,AB09,ErrorCreditorAgent,Transaction stopped due to error at the Creditor Agent.,,
 OBExternalStatusReason1Code,AB10,ErrorInstructedAgent,Transaction stopped due to error at the Instructed Agent.,,
 OBExternalStatusReason1Code,AB11,TimeoutDebtorAgent,Transaction stopped due to timeout at the Debtor Agent.,,
-OBExternalStatusReason1Code,AC01,IncorrectAccountNumber,"Account number is invalid or missing.
-",,
+OBExternalStatusReason1Code,AC01,IncorrectAccountNumber,"Account number is invalid or missing.",,
 OBExternalStatusReason1Code,AC02,InvalidDebtorAccountNumber,Debtor account number invalid or missing,,
 OBExternalStatusReason1Code,AC03,InvalidCreditorAccountNumber,Creditor account number invalid or missing,,
 OBExternalStatusReason1Code,AC04,ClosedAccountNumber,Account number specified has been closed on the bank of account's books. ,,
@@ -232,8 +196,7 @@ OBExternalStatusReason1Code,AC08,InvalidBranchCode,Branch code is invalid or mis
 OBExternalStatusReason1Code,AC09,InvalidAccountCurrency,Account currency is invalid or missing,,
 OBExternalStatusReason1Code,AC10,InvalidDebtorAccountCurrency,Debtor account currency is invalid or missing,,
 OBExternalStatusReason1Code,AC11,InvalidCreditorAccountCurrency,Creditor account currency is invalid or missing,,
-OBExternalStatusReason1Code,AC12,InvalidAccountType,"Account type missing or invalid.
-Generic usage if cannot specify between group and payment information levels",,
+OBExternalStatusReason1Code,AC12,InvalidAccountType,"Account type missing or invalid. Generic usage if cannot specify between group and payment information levels",,
 OBExternalStatusReason1Code,AC13,InvalidDebtorAccountType,Debtor account type missing or invalid,,
 OBExternalStatusReason1Code,AC14,InvalidCreditorAccountType,Creditor account type missing or invalid,,
 OBExternalStatusReason1Code,AC15,AccountDetailsChanged,The account details for the counterparty have changed.,,
@@ -241,16 +204,13 @@ OBExternalStatusReason1Code,AC16,CardNumberInvalid,Credit or debit card number i
 OBExternalStatusReason1Code,AG01,TransactionForbidden,Transaction forbidden on this type of account (formerly NoAgreement),,
 OBExternalStatusReason1Code,AG02,InvalidBankOperationCode,Bank Operation code specified in the message is not valid for receiver,,
 OBExternalStatusReason1Code,AG03,TransactionNotSupported,Transaction type not supported/authorized on this account ,,
-OBExternalStatusReason1Code,AG04,InvalidAgentCountry,"Agent country code is missing or invalid.
-Generic usage if cannot specify between group and payment information levels.",,
+OBExternalStatusReason1Code,AG04,InvalidAgentCountry,"Agent country code is missing or invalid. Generic usage if cannot specify between group and payment information levels.",,
 OBExternalStatusReason1Code,AG05,InvalidDebtorAgentCountry,Debtor agent country code is missing or invalid,,
 OBExternalStatusReason1Code,AG06,InvalidCreditorAgentCountry,Creditor agent country code is missing or invalid,,
-OBExternalStatusReason1Code,AG07,UnsuccesfulDirectDebit,"Debtor account cannot be debited for a generic reason.
-Code value may be used in general purposes and as a replacement for AM04 if debtor bank does not reveal its customer's insufficient funds for privacy reasons",,
+OBExternalStatusReason1Code,AG07,UnsuccesfulDirectDebit,"Debtor account cannot be debited for a generic reason. Code value may be used in general purposes and as a replacement for AM04 if debtor bank does not reveal its customer's insufficient funds for privacy reasons",,
 OBExternalStatusReason1Code,AG08,InvalidAccessRights,Transaction failed due to invalid or missing user or access right,,
 OBExternalStatusReason1Code,AG09,PaymentNotReceived,Original payment never received.,,
-OBExternalStatusReason1Code,AG10,AgentSuspended,"Agent of message is suspended from the Real Time Payment system.
-Generic usage if it cannot be determined who exactly is suspended.",,
+OBExternalStatusReason1Code,AG10,AgentSuspended,"Agent of message is suspended from the Real Time Payment system. Generic usage if it cannot be determined who exactly is suspended.",,
 OBExternalStatusReason1Code,AG11,CreditorAgentSuspended,Creditor Agent of message is suspended from the Real Time Payment system.,,
 OBExternalStatusReason1Code,AG12,NotAllowedBookTransfer,Payment orders made by transferring funds from one account to another at the same financial institution (bank or payment institution) are not allowed.,,
 OBExternalStatusReason1Code,AG13,ForbiddenReturnPayment,Returned payments derived from previously returned transactions are not allowed.,,
@@ -271,8 +231,7 @@ OBExternalStatusReason1Code,AM14,AmountExceedsAgreedLimit,Transaction amount exc
 OBExternalStatusReason1Code,AM15,AmountBelowClearingSystemMinimum,Transaction amount below minimum set by clearing system,,
 OBExternalStatusReason1Code,AM16,InvalidGroupControlSum,Control Sum at the Group level is invalid,,
 OBExternalStatusReason1Code,AM17,InvalidPaymentInfoControlSum,Control Sum at the Payment Information level is invalid,,
-OBExternalStatusReason1Code,AM18,InvalidNumberOfTransactions,"Number of transactions is invalid or missing.
-Generic usage if cannot specify between group and payment information levels.",,
+OBExternalStatusReason1Code,AM18,InvalidNumberOfTransactions,"Number of transactions is invalid or missing. Generic usage if cannot specify between group and payment information levels.",,
 OBExternalStatusReason1Code,AM19,InvalidGroupNumberOfTransactions,Number of transactions at the Group level is invalid or missing,,
 OBExternalStatusReason1Code,AM20,InvalidPaymentInfoNumberOfTransactions,Number of transactions at the Payment Information level is invalid,,
 OBExternalStatusReason1Code,AM21,LimitExceeded,Transaction amount exceeds limits agreed between bank and client.,,
@@ -284,16 +243,13 @@ OBExternalStatusReason1Code,BE05,UnrecognisedInitiatingParty,Party who initiated
 OBExternalStatusReason1Code,BE06,UnknownEndCustomer,End customer specified is not known at associated Sort/National Bank Code or does no longer exist in the books,,
 OBExternalStatusReason1Code,BE07,MissingDebtorAddress,"Specification of debtor's address, which is required for payment, is missing/not correct.",,
 OBExternalStatusReason1Code,BE08,MissingDebtorName,Debtor name is missing,,
-OBExternalStatusReason1Code,BE09,InvalidCountry,"Country code is missing or Invalid.
-Generic usage if cannot specifically identify debtor or creditor",,
+OBExternalStatusReason1Code,BE09,InvalidCountry,"Country code is missing or Invalid. Generic usage if cannot specifically identify debtor or creditor",,
 OBExternalStatusReason1Code,BE10,InvalidDebtorCountry,Debtor country code is missing or invalid,,
 OBExternalStatusReason1Code,BE11,InvalidCreditorCountry,Creditor country code is missing or invalid,,
-OBExternalStatusReason1Code,BE12,InvalidCountryOfResidence,"Country code of residence is missing or Invalid.
-Generic usage if cannot specifically identify debtor or creditor",,
+OBExternalStatusReason1Code,BE12,InvalidCountryOfResidence,"Country code of residence is missing or Invalid. Generic usage if cannot specifically identify debtor or creditor",,
 OBExternalStatusReason1Code,BE13,InvalidDebtorCountryOfResidence,Country code of debtor's residence is missing or Invalid,,
 OBExternalStatusReason1Code,BE14,InvalidCreditorCountryOfResidence,Country code of creditor's residence is missing or Invalid,,
-OBExternalStatusReason1Code,BE15,InvalidIdentificationCode,"Identification code missing or invalid.
-Generic usage if cannot specifically identify debtor or creditor.",,
+OBExternalStatusReason1Code,BE15,InvalidIdentificationCode,"Identification code missing or invalid. Generic usage if cannot specifically identify debtor or creditor.",,
 OBExternalStatusReason1Code,BE16,InvalidDebtorIdentificationCode,Debtor or Ultimate Debtor identification code missing or invalid,,
 OBExternalStatusReason1Code,BE17,InvalidCreditorIdentificationCode,Creditor or Ultimate Creditor identification code missing or invalid,,
 OBExternalStatusReason1Code,BE18,InvalidContactDetails,Contact details missing or invalid,,
@@ -357,8 +313,7 @@ OBExternalStatusReason1Code,DS21,Signer2CertificateNotValid,The certificate is n
 OBExternalStatusReason1Code,DS22,IncorrectSigner2Certificate,The certificate is not present for the second signer.,,
 OBExternalStatusReason1Code,DS23,SignerCertificationAuthoritySigner2NotValid,The authority of signer certification sending the certificate is unknown for the second signer.,,
 OBExternalStatusReason1Code,DS24,WaitingTimeExpired,Waiting time expired due to incomplete order,,
-OBExternalStatusReason1Code,DS25,OrderFileDeleted,"The order file was deleted by the bank server
-(for multiple reasons)",,
+OBExternalStatusReason1Code,DS25,OrderFileDeleted,"The order file was deleted by the bank server (for multiple reasons)",,
 OBExternalStatusReason1Code,DS26,UserSignedMultipleTimes,The same user has signed multiple times,,
 OBExternalStatusReason1Code,DS27,UserNotYetActivated,The user is not yet activated (technically),,
 OBExternalStatusReason1Code,DT01,InvalidDate,"Invalid date (eg, wrong or missing settlement date)",,
@@ -380,8 +335,7 @@ OBExternalStatusReason1Code,ED06,SettlementSystemNotAvailable,Interbank settleme
 OBExternalStatusReason1Code,ERIN,ERIOptionNotSupported,Extended Remittance Information (ERI) option is not supported.,,
 OBExternalStatusReason1Code,FF01,InvalidFileFormat,File Format incomplete or invalid,,
 OBExternalStatusReason1Code,FF02,SyntaxError,Syntax error reason is provided as narrative information in the additional reason information.,,
-OBExternalStatusReason1Code,FF03,InvalidPaymentTypeInformation,"Payment Type Information is missing or invalid.
-Generic usage if cannot specify Service Level or Local Instrument code",,
+OBExternalStatusReason1Code,FF03,InvalidPaymentTypeInformation,"Payment Type Information is missing or invalid. Generic usage if cannot specify Service Level or Local Instrument code",,
 OBExternalStatusReason1Code,FF04,InvalidServiceLevelCode,Service Level code is missing or invalid,,
 OBExternalStatusReason1Code,FF05,InvalidLocalInstrumentCode,Local Instrument code is missing or invalid,,
 OBExternalStatusReason1Code,FF06,InvalidCategoryPurposeCode,Category Purpose code is missing or invalid,,
@@ -390,18 +344,10 @@ OBExternalStatusReason1Code,FF08,InvalidEndToEndId,End to End Id missing or inva
 OBExternalStatusReason1Code,FF09,InvalidChequeNumber,Cheque number missing or invalid,,
 OBExternalStatusReason1Code,FF10,BankSystemProcessingError,File or transaction cannot be processed due to technical issues at the bank side,,
 OBExternalStatusReason1Code,FF11,ClearingRequestAborted,Clearing request rejected due it being subject to an abort operation.,,
-OBExternalStatusReason1Code,G000,PaymentTransferredAndTracked,"In an FI To FI Customer Credit Transfer: The Status Originator transferred the payment to the next Agent or to a Market Infrastructure. The payment transfer is tracked. No further updates will follow from the Status Originator.
-
-In a Financial Institution Credit Transfer with cover: The Status Originator performed the account booking and transferred the cover transaction to the next Reimbursement Agent or to a Market Infrastructure. The payment transfer is tracked. No further updates will follow from the Status Originator.
-",,
-OBExternalStatusReason1Code,G001,PaymentTransferredAndNotTracked,"In an FI To FI Customer Credit Transfer: The Status Originator transferred the payment to the next Agent or to a Market Infrastructure. The payment transfer is not tracked. No further updates will follow from the Status Originator.
-
-In a Financial Institution Credit Transfer with cover: The Status Originator performed the account booking and transferred the cover transaction to the next Reimbursement Agent or to a Market Infrastructure. The payment transfer is not tracked. No further updates will follow from the Status Originator.
-",,
-OBExternalStatusReason1Code,G002,CreditDebitNotConfirmed,"In a FIToFI Customer Credit Transfer: Credit to the creditor’s account may not be confirmed same day. Update will follow from the Status Originator.
-In a Financial Institution Credit Transfer with cover: Debit/credit to nostro account may not be confirmed same day or Financial Institution Credit Transfer may not be transferred same day. Update will follow from the Status Originator.",,
-OBExternalStatusReason1Code,G003,CreditPendingDocuments,"In a FIToFI Customer Credit Transfer: Credit to creditor’s account is pending receipt of required documents. The Status Originator has requested creditor to provide additional documentation. Update will follow from the Status Originator.
-In a Financial Institution Credit Transfer with cover: Status Originator has requested a previous Agent to provide additional information/correct information. Update will follow from the Status Originator.",,
+OBExternalStatusReason1Code,G000,PaymentTransferredAndTracked,"In an FI To FI Customer Credit Transfer: The Status Originator transferred the payment to the next Agent or to a Market Infrastructure. The payment transfer is tracked. No further updates will follow from the Status Originator. In a Financial Institution Credit Transfer with cover: The Status Originator performed the account booking and transferred the cover transaction to the next Reimbursement Agent or to a Market Infrastructure. The payment transfer is tracked. No further updates will follow from the Status Originator.",,
+OBExternalStatusReason1Code,G001,PaymentTransferredAndNotTracked,"In an FI To FI Customer Credit Transfer: The Status Originator transferred the payment to the next Agent or to a Market Infrastructure. The payment transfer is not tracked. No further updates will follow from the Status Originator. In a Financial Institution Credit Transfer with cover: The Status Originator performed the account booking and transferred the cover transaction to the next Reimbursement Agent or to a Market Infrastructure. The payment transfer is not tracked. No further updates will follow from the Status Originator.",,
+OBExternalStatusReason1Code,G002,CreditDebitNotConfirmed,"In a FIToFI Customer Credit Transfer: Credit to the creditor’s account may not be confirmed same day. Update will follow from the Status Originator. In a Financial Institution Credit Transfer with cover: Debit/credit to nostro account may not be confirmed same day or Financial Institution Credit Transfer may not be transferred same day. Update will follow from the Status Originator.",,
+OBExternalStatusReason1Code,G003,CreditPendingDocuments,"In a FIToFI Customer Credit Transfer: Credit to creditor’s account is pending receipt of required documents. The Status Originator has requested creditor to provide additional documentation. Update will follow from the Status Originator. In a Financial Institution Credit Transfer with cover: Status Originator has requested a previous Agent to provide additional information/correct information. Update will follow from the Status Originator.",,
 OBExternalStatusReason1Code,G004,CreditPendingFunds,"In a FIToFI Customer Credit Transfer: Credit to the creditor’s account is pending, status Originator is waiting for funds provided via a cover. Update will follow from the Status Originator.",,
 OBExternalStatusReason1Code,G005,DeliveredWithServiceLevel,Payment has been delivered to creditor agent with service level.,,
 OBExternalStatusReason1Code,G006,DeliveredWIthoutServiceLevel,Payment has been delivered to creditor agent without service level.,,
@@ -416,16 +362,13 @@ OBExternalStatusReason1Code,MS03,NotSpecifiedReasonAgentGenerated,Reason has not
 OBExternalStatusReason1Code,NARR,Narrative,Reason is provided as narrative information in the additional reason information.,,
 OBExternalStatusReason1Code,NERI,NoERI,Credit transfer is tagged as an Extended Remittance Information (ERI) transaction but does not contain ERI.,,
 OBExternalStatusReason1Code,RC01,BankIdentifierIncorrect,Bank identifier code specified in the message has an incorrect format (formerly IncorrectFormatForRoutingCode).,,
-OBExternalStatusReason1Code,RC02,InvalidBankIdentifier,"Bank identifier is invalid or missing.
-Generic usage if cannot specify between debit or credit account",,
+OBExternalStatusReason1Code,RC02,InvalidBankIdentifier,"Bank identifier is invalid or missing. Generic usage if cannot specify between debit or credit account",,
 OBExternalStatusReason1Code,RC03,InvalidDebtorBankIdentifier,Debtor bank identifier is invalid or missing,,
 OBExternalStatusReason1Code,RC04,InvalidCreditorBankIdentifier,Creditor bank identifier is invalid or missing,,
-OBExternalStatusReason1Code,RC05,InvalidBICIdentifier,"BIC identifier is invalid or missing.
-Generic usage if cannot specify between debit or credit account.",,
+OBExternalStatusReason1Code,RC05,InvalidBICIdentifier,"BIC identifier is invalid or missing. Generic usage if cannot specify between debit or credit account.",,
 OBExternalStatusReason1Code,RC06,InvalidDebtorBICIdentifier,Debtor BIC identifier is invalid or missing,,
 OBExternalStatusReason1Code,RC07,InvalidCreditorBICIdentifier,Creditor BIC identifier is invalid or missing,,
-OBExternalStatusReason1Code,RC08,InvalidClearingSystemMemberIdentifier,"ClearingSystemMemberidentifier is invalid or missing.
-Generic usage if cannot specify between debit or credit account",,
+OBExternalStatusReason1Code,RC08,InvalidClearingSystemMemberIdentifier,"ClearingSystemMemberidentifier is invalid or missing. Generic usage if cannot specify between debit or credit account",,
 OBExternalStatusReason1Code,RC09,InvalidDebtorClearingSystemMemberIdentifier,Debtor ClearingSystemMember identifier is invalid or missing,,
 OBExternalStatusReason1Code,RC10,InvalidCreditorClearingSystemMemberIdentifier,Creditor ClearingSystemMember identifier is invalid or missing,,
 OBExternalStatusReason1Code,RC11,InvalidIntermediaryAgent,Intermediary Agent is invalid or missing,,
@@ -506,10 +449,8 @@ OBInternalAccountIdentification4Code,UK.OBIE.BBAN,UK.OBIE.BBAN,"Basic Bank Accou
 OBInternalAccountIdentification4Code,UK.OBIE.IBAN,UK.OBIE.IBAN,"An identifier used internationally by financial institutions to uniquely identify the account of a customer at a financial institution, as described in the latest edition of the international standard ISO 13616. ""Banking and related financial services - International Bank Account Number (IBAN)"".",,
 OBInternalAccountIdentification4Code,UK.OBIE.PAN,UK.OBIE.PAN,Primary Account Number - identifier scheme used to identify a card account.,,
 OBInternalAccountIdentification4Code,UK.OBIE.Paym,UK.OBIE.Paym,Paym Scheme to make payments via mobile,,
-OBInternalAccountIdentification4Code,UK.OBIE.SortCodeAccountNumber,UK.OBIE.SortCodeAccountNumber,"Sort Code and Account Number - identifier scheme used in the UK by financial institutions to identify the account of a customer. The identifier is the concatenation of the 6 digit UK sort code and 8 digit account number.
-The regular expression for this identifier is: ^[0-9]{6}[0-9]{8}$",,
-OBInternalAccountIdentification4Code,UK.OBIE.Wallet,UK.OBIE.Wallet,"A primary and unique account identifier used to identify a wallet.
-An ASPSP must document on their developer portal, the payment methods that supports this account identifier.",,
+OBInternalAccountIdentification4Code,UK.OBIE.SortCodeAccountNumber,UK.OBIE.SortCodeAccountNumber,"Sort Code and Account Number - identifier scheme used in the UK by financial institutions to identify the account of a customer. The identifier is the concatenation of the 6 digit UK sort code and 8 digit account number. The regular expression for this identifier is: ^[0-9]{6}[0-9]{8}$",,
+OBInternalAccountIdentification4Code,UK.OBIE.Wallet,UK.OBIE.Wallet,"A primary and unique account identifier used to identify a wallet. An ASPSP must document on their developer portal, the payment methods that supports this account identifier.",,
 OBInternalFinancialInstitutionIdentification4Code,UK.OBIE.BICFI,UK.OBIE.BICFI,"Valid BICs for financial institutions are registered by the ISO 9362 Registration Authority in the BIC directory, and consist of eight (8) or eleven (11) contiguous characters.",,
 OBInternalFinancialInstitutionIdentification4Code,UK.OBIE.NCC.[ISO3166-aplha2-CountryCode],UK.OBIE.NCC.[ISO3166-aplha2-CountryCode],"Valid NCC (National Clearing Code) as an option for the accounts that don't have an IBAN, registered in the country identified by the 2 letter ISO-3166 Country code. For example, transfer to India may have Scheme Name as UK.OBIE.NCC.IN and Identification can be the IFSC code of the bank/branch in India.",,
 OBInternalStatementAmountType1Code,UK.OBIE.ArrearsClosingBalance,UK.OBIE.ArrearsClosingBalance,The balance that is in arrears at the end of the statement period.,,
@@ -668,12 +609,10 @@ OBVRPAuthenticationMethods,UK.OBIE.SCANotRequired,UK.OBIE.SCANotRequired,This in
 OBVRPInteractionTypes,InSession,InSession,Indicates the customer is present for interaction type.,,
 OBVRPInteractionTypes,OffSession,OffSession,Indicates the customer is not present for interaction type.,,
 OBInternalPermissions1Code,ReadAccountsBasic,ReadAccountsBasic,Ability to read basic account information,,
-OBInternalPermissions1Code,ReadAccountsDetail,ReadAccountsDetail,"Ability to read account identification details
-Business Logic: Access to additional elements in the payload",,
+OBInternalPermissions1Code,ReadAccountsDetail,ReadAccountsDetail,"Ability to read account identification details. Business Logic: Access to additional elements in the payload",,
 OBInternalPermissions1Code,ReadBalances,ReadBalances,Ability to read all balance information,,
 OBInternalPermissions1Code,ReadBeneficiariesBasic,ReadBeneficiariesBasic,Ability to read basic beneficiary details,,
-OBInternalPermissions1Code,ReadBeneficiariesDetail,ReadBeneficiariesDetail,"Ability to read account identification details for the beneficiary
-Business Logic: Access to additional elements in the payload",,
+OBInternalPermissions1Code,ReadBeneficiariesDetail,ReadBeneficiariesDetail,"Ability to read account identification details for the beneficiary. Business Logic: Access to additional elements in the payload",,
 OBInternalPermissions1Code,ReadDirectDebits,ReadDirectDebits,Ability to read all direct debit information,,
 OBInternalPermissions1Code,ReadOffers,ReadOffers,Ability to read all offer information,,
 OBInternalPermissions1Code,ReadPAN,ReadPAN,"Specifies the Open Banking account access data types. This is a list of the data clusters being consented by the PSU, and requested for authorisation with the ASPSP.",,
@@ -685,28 +624,11 @@ OBInternalPermissions1Code,ReadScheduledPaymentsDetail,ReadScheduledPaymentsDeta
 OBInternalPermissions1Code,ReadStandingOrdersBasic,ReadStandingOrdersBasic,Ability to read basic information of Standing orders,,
 OBInternalPermissions1Code,ReadStandingOrdersDetail,ReadStandingOrdersDetail,Ability to read all data elements in Standing orders in the payload.,,
 OBInternalPermissions1Code,ReadStatementsBasic,ReadStatementsBasic,Ability to read basic statement details,,
-OBInternalPermissions1Code,ReadStatementsDetail,ReadStatementsDetail,"Ability to read all data elements in the Statements.
-Business Logic: Access to additional elements in the payload
-Access to download the statement file (if the ASPSP makes this available).",,
-OBInternalPermissions1Code,ReadTransactionsBasic,ReadTransactionsBasic,"Ability to read basic transaction information
-Business Logic :Permissions must also include at least one of:
-ReadTransactionsCredits
-ReadTransactionsDebits",,
-OBInternalPermissions1Code,ReadTransactionsCredits,ReadTransactionsCredits,"Ability to read only credit transactions
-Business Logic: Access to credit transactions.
-Permissions must also include one of:
-ReadTransactionsBasic
-ReadTransactionsDetail",,
-OBInternalPermissions1Code,ReadTransactionsDebits,ReadTransactionsDebits,"Ability to read only debit transactions
-Business Logic: Access to debit transactions.
-Permissions must also include one of:
-ReadTransactionsBasic
-ReadTransactionsDetail",,
-OBInternalPermissions1Code,ReadTransactionsDetail,ReadTransactionsDetail,"Ability to read transaction data elements which may hold silent party details
-Business Logic: Access to additional elements in the payload
-Permissions must also include at least one of:
-ReadTransactionsCredits
-ReadTransactionsDebit",,
+OBInternalPermissions1Code,ReadStatementsDetail,ReadStatementsDetail,"Ability to read all data elements in the Statements. Business Logic: Access to additional elements in the payload. Access to download the statement file (if the ASPSP makes this available).",,
+OBInternalPermissions1Code,ReadTransactionsBasic,ReadTransactionsBasic,"Ability to read basic transaction information. Business Logic: Permissions must also include at least one of: ReadTransactionsCredits, ReadTransactionsDebits",,
+OBInternalPermissions1Code,ReadTransactionsCredits,ReadTransactionsCredits,"Ability to read only credit transactions. Business Logic: Access to credit transactions. Permissions must also include one of: ReadTransactionsBasic, ReadTransactionsDetail",,
+OBInternalPermissions1Code,ReadTransactionsDebits,ReadTransactionsDebits,"Ability to read only debit transactions. Business Logic: Access to debit transactions. Permissions must also include one of: ReadTransactionsBasic, ReadTransactionsDetail",,
+OBInternalPermissions1Code,ReadTransactionsDetail,ReadTransactionsDetail,"Ability to read transaction data elements which may hold silent party details. Business Logic: Access to additional elements in the payload. Permissions must also include at least one of: ReadTransactionsCredits, ReadTransactionsDebit",,
 OBInternalAccountStatus1Code,Enabled ,Enabled ,Account can be used for its intended purpose.,,
 OBInternalAccountStatus1Code,Disabled,Disabled,"Account cannot be used for its intended purpose, either temporarily or permanently.",,
 OBInternalAccountStatus1Code,Deleted,Deleted,Account cannot be used any longer.,,
@@ -769,10 +691,8 @@ OBInternalChargeBearerType1Code,FollowingServiceLevel,FollowingServiceLevel,Spec
 OBInternalChargeBearerType1Code,Shared,Shared,Specifies which party/parties will bear the charges associated with the processing of the payment transaction.,,
 OBInternalAuthorisation1Code,Any,Any,Type of authorisation flow requested.,,
 OBInternalAuthorisation1Code,Single,Single,Type of authorisation flow requested.,,
-OBInternalAppliedAuthenticationApproach1Code,CA,CA,"Specifies a character string with a maximum length of 40 characters.
-Usage: This field indicates whether the PSU was subject to SCA performed by the TPP",,
-OBInternalAppliedAuthenticationApproach1Code,SCA,SCA,"Specifies a character string with a maximum length of 40 characters.
-Usage: This field indicates whether the PSU was subject to SCA performed by the TPP",,
+OBInternalAppliedAuthenticationApproach1Code,CA,CA,"Specifies a character string with a maximum length of 40 characters. Usage: This field indicates whether the PSU was subject to SCA performed by the TPP",,
+OBInternalAppliedAuthenticationApproach1Code,SCA,SCA,"Specifies a character string with a maximum length of 40 characters. Usage: This field indicates whether the PSU was subject to SCA performed by the TPP",,
 OBInternalSCAExemptionType1Code,BillPayment,BillPayment,This field allows a PISP to request specific SCA Exemption for a Payment Initiation,,
 OBInternalSCAExemptionType1Code,ContactlessTravel,ContactlessTravel,This field allows a PISP to request specific SCA Exemption for a Payment Initiation,,
 OBInternalSCAExemptionType1Code,EcommerceGoods,EcommerceGoods,This field allows a PISP to request specific SCA Exemption for a Payment Initiation,,
@@ -783,8 +703,8 @@ OBInternalSCAExemptionType1Code,PartyToParty,PartyToParty,This field allows a PI
 OBExternalMandateClassification1Code,FIXE,Fixed,Direct debit amount is fixed.,,
 OBExternalMandateClassification1Code,USGB,Usage Based,Direct debit amount is based on usage.,,
 OBExternalMandateClassification1Code,VARI,Variable,Direct debit amount is variable.,,
-OBExternalRegulatoryReportingType1Code,CRED,Credit,Regulatory information applies to the credit side.,,
-OBExternalRegulatoryReportingType1Code,DEBT,Debit,Regulatory information applies to the debit side.,,
+OBExternalRegulatoryReportingType1Code,CRED,Credit,Regulatory information applies to the credit side.,,
+OBExternalRegulatoryReportingType1Code,DEBT,Debit,Regulatory information applies to the debit side.,,
 OBExternalRegulatoryReportingType1Code,BOTH,Both,Regulatory information applies to both credit and debit sides.,,
 OBInternalReadRefundAccount1Code,Yes,Yes,Specifies to share the refund account details with PISP,,
 OBInternalReadRefundAccount1Code,No,No,Specifies to share the refund account details with PISP,,
@@ -794,3 +714,10 @@ OBInternalExchangeRateType2Code,Agreed,Agreed,Specifies the type used to complet
 OBInternalExchangeRateType2Code,Indicative,Indicative,Specifies the type used to complete the currency exchange.,,
 OBInternalPriority2Code,Normal,Normal,Indicator of the urgency or order of importance that the instructing party would like the instructed party to apply to the processing of the instruction.,,
 OBInternalPriority2Code,Urgent,Urgent,Indicator of the urgency or order of importance that the instructing party would like the instructed party to apply to the processing of the instruction.,,
+OBIntermediaryAgentStatus1Code,PDNG,Pending,Payment instruction is pending at Intermediary Agent.,,
+OBIntermediaryAgentStatus1Code,RCVD,Received,Payment instruction has been received at Intermediary Agent.,,
+OBIntermediaryAgentStatus1Code,ACSP,AcceptedSettlementInProcess,All preceding checks such as technical validation and customer profile were successful and therefore the payment instruction has been accepted for execution.,,
+OBIntermediaryAgentStatus1Code,ACSC,AcceptedSettlementCompletedDebitorAccount,Settlement on the debtor's account has been completed. Usage: this can be used by the first Intermediary agent to report to the debtor that the transaction has been completed.,,
+OBIntermediaryAgentStatus1Code,RJCT,Rejected,Payment instruction has been rejected at Intermediary Agent.,,
+OBIntermediaryAgentStatus1Code,UNKN,Unknown,Payment status is not known to the sending bank (only used for Intermediary Agent).,,
+OBIntermediaryAgentStatus1Code,CANC,Cancelled,The payment has been cancelled at the Intermediary Agent.,,
