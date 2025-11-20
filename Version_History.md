@@ -1,4 +1,4 @@
-## **Version History**
+# Version History
 ## Older Versions
 
 > **Note**: Information that has been removed is marked as ~~struck out~~ and that has changed or added is marked as 
