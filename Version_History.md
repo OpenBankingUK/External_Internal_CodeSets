@@ -2,8 +2,6 @@
 
 ## v4.0.1 - 2025-11-20
 
-Created by OBL Standards Team
-
 ### Added
 
 - Added to `OBInternalStatementFeeType1Code`:
