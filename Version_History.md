@@ -53,6 +53,7 @@ Created by OBL Standards Team
 - Corrected `OBExternalStatusReason1Code` `1180` description (#21)
 - Moved the `BusinessCurrentAccount` code from `OBInternalCardSchemeType1Code` to `OBInternalProductType1Code` (#13)
 - Corrected `OBExternalAuthorisation1Code` to `OBInternalAuthorisation1Code` (#14)
+- Fix typo in `ExternalPaymentGroupStatus1Code` `INFA` description (#15)
 
 ## Older Versions
 
