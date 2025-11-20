@@ -170,7 +170,7 @@ OBExternalStatusReason1Code,1165,,Account is not in currency quoted. Check recei
 OBExternalStatusReason1Code,1166,,Account transferred. Check receiving account details,,,
 OBExternalStatusReason1Code,1177,,Receiving agency account closed,,,
 OBExternalStatusReason1Code,1178,,Receiving agency account stopped,,,
-OBExternalStatusReason1Code,1180,,Account transferred. Check receiving account details,,,
+OBExternalStatusReason1Code,1180,,Receiving Agency/Responding Third Party Beneficiary Account transferred.,,,
 OBExternalStatusReason1Code,1181,,Duplicate Payment (FPID). Resubmitting with change,,,
 OBExternalStatusReason1Code,0000,,Credited to beneficiary account,,,
 OBExternalStatusReason1Code,AB01,AbortedClearingTimeout,Clearing process aborted due to timeout.   ,,,
