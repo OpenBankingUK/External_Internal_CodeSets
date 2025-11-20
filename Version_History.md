@@ -26,7 +26,7 @@ Created by OBL Standards Team
 
 ### Removed
 
-- Removed duplicate `ExternalMandateStatus1Code` from `ISO_External_Codeset.csv` (#12)
+- Removed duplicate `ExternalMandateStatus1Code` codes (#12)
 - Removed deprecated `OBExternalStatus3Code` (#13)
 
 ### Fixed
