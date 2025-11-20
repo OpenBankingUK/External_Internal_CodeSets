@@ -1,4 +1,39 @@
 # Version History
+
+## v4.0.1 - 2025-11-20
+
+Created by OBL Standards Team
+
+### Added
+
+- Added to `OBInternalStatementFeeType1Code`:
+  - `UK.OBIE.InstalmentPlan`
+  - `UK.OBIE.ReturnedPayment`
+- Added to `OBInternalStatementInterestType1Code`:
+  - `UK.OBIE.InstalmentPlan`
+  - `UK.OBIE.MoneyTransfer`
+- Added `CRYP` to `ExternalPurpose1Code`
+- Introduced `OBIntermediaryAgentStatus1Code` in `OB_Internal_Codeset`. This is used for
+  `OBIntermediaryAgent/ProcessingStatus` and has the following codes:
+  - `PDNG`
+  - `RCVD`
+  - `ACSP`
+  - `ACSC`
+  - `RJCT`
+  - `UNKN`
+  - `CANC`
+- Description of code value `U037` updated to "Authorisation failed by one (or more) of the authenticators."
+
+### Removed
+
+- Removed duplicate `ExternalMandateStatus1Code` from `ISO_External_Codeset.csv` (#12)
+
+### Fixed
+
+- codesets are now contiguous and organized alphabetically
+- several descriptions have been moved out of the codeset name column and into the description column
+- Corrected `OBExternalStatusReason1Code` `1180` description (#21)
+
 ## Older Versions
 
 > **Note**: Information that has been removed is marked as ~~struck out~~ and that has changed or added is marked as 
