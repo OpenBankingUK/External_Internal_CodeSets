@@ -52,6 +52,7 @@ Created by OBL Standards Team
 - several descriptions have been moved out of the codeset name column and into the description column
 - Corrected `OBExternalStatusReason1Code` `1180` description (#21)
 - Moved the `BusinessCurrentAccount` code from `OBInternalCardSchemeType1Code` to `OBInternalProductType1Code` (#13)
+- Corrected `OBExternalAuthorisation1Code` to `OBInternalAuthorisation1Code` (#14)
 
 ## Older Versions
 
