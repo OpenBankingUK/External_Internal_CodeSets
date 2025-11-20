@@ -24,6 +24,23 @@ Created by OBL Standards Team
   - `CANC`
 - Description of code value `U037` updated to "Authorisation failed by one (or more) of the authenticators."
 
+
+### Changed
+
+- Separated `OBInternalConsentStatus1Code` into 3 codesets for certain contexts (#17):
+  - Removed `COND` & `AWUP` from `OBInternalConsentStatus2Code`
+  - Added `OBInternalConsentStatus2Code` to `OB_Internal_Codeset.csv` with the following values:
+    - AWAU
+    - RJCT
+    - AUTH
+    - COND
+  - Added `OBInternalConsentStatus3Code` to `OB_Internal_Codeset.csv` with the following values:
+    - AWAU
+    - RJCT
+    - AUTH
+    - COND
+    - AWUP
+
 ### Removed
 
 - Removed duplicate `ExternalMandateStatus1Code` codes (#12)
