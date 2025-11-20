@@ -40,6 +40,7 @@ Created by OBL Standards Team
     - AUTH
     - COND
     - AWUP
+- Updated description of `U037` in `OBExternalStatusReason1Code` (#7)
 
 ### Removed
 
