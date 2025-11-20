@@ -24,23 +24,86 @@ Created by OBL Standards Team
   - `CANC`
 - Description of code value `U037` updated to "Authorisation failed by one (or more) of the authenticators."
 
-
 ### Changed
 
 - Separated `OBInternalConsentStatus1Code` into 3 codesets for certain contexts (#17):
   - Removed `COND` & `AWUP` from `OBInternalConsentStatus2Code`
   - Added `OBInternalConsentStatus2Code` to `OB_Internal_Codeset.csv` with the following values:
-    - AWAU
-    - RJCT
-    - AUTH
-    - COND
+    - `AWAU`
+    - `RJCT`
+    - `AUTH`
+    - `COND`
   - Added `OBInternalConsentStatus3Code` to `OB_Internal_Codeset.csv` with the following values:
-    - AWAU
-    - RJCT
-    - AUTH
-    - COND
-    - AWUP
+    - `AWAU`
+    - `RJCT`
+    - `AUTH`
+    - `COND`
+    - `AWUP`
 - Updated description of `U037` in `OBExternalStatusReason1Code` (#7)
+- Separated `ExternalPaymentTransactionStatus1Code` into 5 codesets for specific contexts (#16). New Codes look like:
+  - `ExternalPaymentTransactionStatus1Code` (16 codes) for Domestic Standing Orders & International Standing Orders:
+    - `CANC`
+    - `RCVD`
+    - `ACTC`
+    - `PATC`
+    - `PDNG`
+    - `RJCT`
+    - `INFA`
+    - `INCO`
+    - `ACCP`
+    - `ACFC`
+    - `ACSP`
+    - `ACWC`
+    - `ACSC`
+    - `BLCK`
+    - `ACCC`
+    - `ACWP`
+  - `ExternalPaymentTransactionStatus2Code` (14 codes) for Domestic Scheduled Payments and International Scheduled Payments:
+    - `CANC`
+    - `RCVD`
+    - `PDNG`
+    - `ACTC`
+    - `PATC`
+    - `ACCP`
+    - `ACFC`
+    - `ACSP`
+    - `ACWC`
+    - `ACSC`
+    - `BLCK`
+    - `ACCC`
+    - `ACWP`
+    - `RJCT`
+  - `ExternalPaymentTransactionStatus3Code` (13 codes) for Domestic Payments and International Payments:
+    - `RCVD`
+    - `PDNG`
+    - `ACTC`
+    - `PATC`
+    - `ACCP`
+    - `ACFC`
+    - `ACSP`
+    - `ACWC`
+    - `ACSC`
+    - `BLCK`
+    - `ACCC`
+    - `ACWP`
+    - `RJCT`
+  - `ExternalPaymentTransactionStatus4Code` (3 codes) for File Payments:
+    - `PDNG`
+    - `INFA`
+    - `INCO`
+  - `ExternalPaymentTransactionStatus5Code` (12 codes) for Domestic VRPs:
+    - `RCVD`
+    - `PDNG`
+    - `ACTC`
+    - `ACCP`
+    - `ACFC`
+    - `ACSP`
+    - `ACWC`
+    - `ACSC`
+    - `BLCK`
+    - `ACCC`
+    - `ACWP`
+    - `RJCT`
 
 ### Removed
 
