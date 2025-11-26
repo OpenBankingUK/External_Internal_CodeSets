@@ -1,4 +1,4 @@
-# External_Interal_CodeSets
+# External_Internal_CodeSets
 This is a centralised repository for all the Code Sets that are referenced in the OBL API Specifications.
 4Q2023_ExternalCodeSets_v2 is the ISO External full codeset that is fetched from here (https://www.iso20022.org/catalogue-messages/additional-content-messages/external-code-sets)
 
