@@ -453,6 +453,7 @@ OBFrequency2Code,MIAN,Semi-annual,Event takes place every six months or two time
 OBFrequency2Code,TEND,Ten days,Event takes place every ten business days.,,
 OBFrequency2Code,MOVE,Triggered by Movement,"Event takes place at the end of the day if there was a movement on the account, otherwise nothing is sent that day.",,
 OBFrequency2Code,WEEK,Weekly,Event takes place once a week.,,
+OBFrequency2Code,NONE,Not known / Not available,When frequency is not available,,
 OBFrequency6Code,ADHO,Adhoc,Event takes place on request or as necessary.,,
 OBFrequency6Code,YEAR,Annual,Event takes place every year or once a year.,,
 OBFrequency6Code,DAIL,Daily,Event takes place every day.,,
