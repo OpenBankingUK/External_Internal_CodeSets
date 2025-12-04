@@ -21,6 +21,7 @@
   - `UNKN`
   - `CANC`
 - Description of code value `U037` updated to "Authorisation failed by one (or more) of the authenticators."
+- Added `NONE` to `OBFrequency2Code`
 
 ### Changed
 
