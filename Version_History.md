@@ -5,6 +5,7 @@
 ### Added
 
 - Added `LWMH`, `LXMH`, and `TWYR` to `OBFrequency6Code` in OBInternal
+- Added `SLCT` to `OBFrequency2Code` in OBInternal
 
 ## v4.0.1 - 2026-01-05
 
