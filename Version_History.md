@@ -7,6 +7,10 @@
 - Added `LWMH`, `LXMH`, and `TWYR` to `OBFrequency6Code` in OBInternal
 - Added `SLCT` to `OBFrequency2Code` in OBInternal
 
+### Updated
+
+- Updated ISO 20022 External Codeset files to Q3 2025 release.
+
 ## v4.0.1 - 2026-01-05
 
 ### Added
