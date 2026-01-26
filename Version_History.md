@@ -10,6 +10,7 @@
 ### Updated
 
 - Updated ISO 20022 External Codeset files to Q3 2025 release.
+- Updated description for CRYP code to "Transaction is related to the purchase or sale of cryptocurrency."
 
 ## v4.0.1 - 2026-01-05
 
