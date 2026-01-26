@@ -687,5 +687,4 @@ ExternalTaxAmountType1Code,CITY,CityTax,Tax accessed by city jurisdications with
 ExternalTaxAmountType1Code,CNTY,CountyTax,Tax accessed by county jurisdications within a country.,
 ExternalTaxAmountType1Code,LOCL,LocalTax,Tax accessed by local jurisdications within a country.,
 ExternalTaxAmountType1Code,PROV,ProvinceTax,Tax accessed by province jurisdications within a country.,
-
 ExternalTaxAmountType1Code,STAT,StateTax,Tax accessed by state jurisdications within a country.,
