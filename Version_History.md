@@ -1,15 +1,17 @@
 # Version History
 
-## Unreleased
+## v4.0.1 Release Candidate 2 - Date TBC
 
 ### Added
 
 - Added `LWMH`, `LXMH`, and `TWYR` to `OBFrequency6Code` in OBInternal
 - Added `SLCT` to `OBFrequency2Code` in OBInternal
+- Added legacy values to `OBExternalPaymentContext1Code`: `Other`, `Bill` `Payment`, `EcommerceGoods`, `EcommerceServices`, `PartyToParty`, `PispPayee`
 
 ### Updated
 
 - Updated ISO 20022 External Codeset files to Q3 2025 release.
+- Enhanced the descriptions of current `OBExternalPaymentContext1Code` codes `BillingGoodsAndServicesInAdvance`, `BillingGoodsAndServicesInArrears`, `EcommerceMerchantInitiatedPayment`, `FaceToFacePointOfSale`, `TransferToSelf`, `TransferToThirdParty`
 
 ## v4.0.1 - 2026-01-05
 
