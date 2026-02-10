@@ -11,6 +11,7 @@
 ### Updated
 
 - Updated ISO 20022 External Codeset files to Q3 2025 release.
+- Updated description for CRYP code to "Transaction is related to the purchase or sale of cryptocurrency."
 - Enhanced the descriptions of current `OBExternalPaymentContext1Code` codes `BillingGoodsAndServicesInAdvance`, `BillingGoodsAndServicesInArrears`, `EcommerceMerchantInitiatedPayment`, `FaceToFacePointOfSale`, `TransferToSelf`, `TransferToThirdParty`
 
 ## v4.0.1 Release Candidate 1 - 2026-01-05
