@@ -6,7 +6,6 @@
 
 - Added `LWMH`, `LXMH`, and `TWYR` to `OBFrequency6Code` in OBInternal
 - Added `SLCT` to `OBFrequency2Code` in OBInternal
-- Added legacy values to `OBExternalPaymentContext1Code`: `Other`, `Bill` `Payment`, `EcommerceGoods`, `EcommerceServices`, `PartyToParty`, `PispPayee`
 
 ### Updated
 
