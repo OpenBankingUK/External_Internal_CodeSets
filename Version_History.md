@@ -1,5 +1,11 @@
 # Version History
 
+## Unreleased
+
+### Fixed
+
+- Fixed typo in `OBExternalStatusReason1Code` `U003` description
+
 ## v4.0.1 Release Candidate 2 - 2026-02-04
 
 ### Added
