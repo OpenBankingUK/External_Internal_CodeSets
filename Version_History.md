@@ -4,33 +4,33 @@
 
 ### Fixed
 
-- Fixed typo in `OBExternalStatusReason1Code` `U003` description
+- [CDRW-5006] Fixed typo in `OBExternalStatusReason1Code` `U003` description
 
 ## v4.0.1 Release Candidate 2 - 2026-02-04
 
 ### Added
 
-- Added `LWMH`, `LXMH`, and `TWYR` to `OBFrequency6Code` in OBInternal
-- Added `SLCT` to `OBFrequency2Code` in OBInternal
+- [v40_KI45] Added `LWMH`, `LXMH`, and `TWYR` to `OBFrequency6Code` in OBInternal
+- [v40_KI46] Added `SLCT` to `OBFrequency2Code` in OBInternal
 
 ### Updated
 
-- Updated ISO 20022 External Codeset files to Q3 2025 release.
-- Updated description for CRYP code to "Transaction is related to the purchase or sale of cryptocurrency."
-- Enhanced the descriptions of current `OBExternalPaymentContext1Code` codes `BillingGoodsAndServicesInAdvance`, `BillingGoodsAndServicesInArrears`, `EcommerceMerchantInitiatedPayment`, `FaceToFacePointOfSale`, `TransferToSelf`, `TransferToThirdParty`
+- [CDRW-5007] Updated ISO 20022 External Codeset files to Q3 2025 release.
+- [CR4a] Updated description for CRYP code to "Transaction is related to the purchase or sale of cryptocurrency."
+- [CDRW-5002] Enhanced the descriptions of current `OBInternalPaymentContext1Code` codes `BillingGoodsAndServicesInAdvance`, `BillingGoodsAndServicesInArrears`, `EcommerceMerchantInitiatedPayment`, `FaceToFacePointOfSale`, `TransferToSelf`, `TransferToThirdParty`
 
 ## v4.0.1 Release Candidate 1 - 2026-01-05
 
 ### Added
 
-- Added to `OBInternalStatementFeeType1Code`:
+- [CR1] Added to `OBInternalStatementFeeType1Code`:
   - `UK.OBIE.InstalmentPlan`
   - `UK.OBIE.ReturnedPayment`
-- Added to `OBInternalStatementInterestType1Code`:
+- [CR1] Added to `OBInternalStatementInterestType1Code`:
   - `UK.OBIE.InstalmentPlan`
   - `UK.OBIE.MoneyTransfer`
-- Added `CRYP` to `ExternalPurpose1Code`
-- Introduced `OBIntermediaryAgentStatus1Code` in `OB_Internal_Codeset`. This is used for
+- [CR4a] Added `CRYP` to `ExternalPurpose1Code`
+- [CR2] Introduced `OBIntermediaryAgentStatus1Code` in `OB_Internal_Codeset`. This is used for
   `OBIntermediaryAgent/ProcessingStatus` and has the following codes:
   - `PDNG`
   - `RCVD`
@@ -39,12 +39,12 @@
   - `RJCT`
   - `UNKN`
   - `CANC`
-- Description of code value `U037` updated to "Authorisation failed by one (or more) of the authenticators."
-- Added `NONE` to `OBFrequency2Code`
+- [v40_KI39] Description of code value `U037` updated to "Authorisation failed by one (or more) of the authenticators."
+- [v40_KI46] Added `NONE` to `OBFrequency2Code`
 
 ### Changed
 
-- Separated `OBInternalConsentStatus1Code` into 3 codesets for certain contexts (#17):
+- [CDRW-4764] Separated `OBInternalConsentStatus1Code` into 3 codesets for certain contexts (#17):
   - Removed `COND` & `AWUP` from `OBInternalConsentStatus2Code`
   - Added `OBInternalConsentStatus2Code` to `OB_Internal_Codeset.csv` with the following values:
     - `AWAU`
@@ -57,8 +57,8 @@
     - `AUTH`
     - `COND`
     - `AWUP`
-- Updated description of `U037` in `OBExternalStatusReason1Code` (#7)
-- Separated `ExternalPaymentTransactionStatus1Code` into 5 codesets for specific contexts (#16). New Codes look like:
+- [v40_KI39] Updated description of `U037` in `OBExternalStatusReason1Code` (#7)
+- [CDRW-4764] Separated `ExternalPaymentTransactionStatus1Code` into 5 codesets for specific contexts (#16). New Codes look like:
   - `ExternalPaymentTransactionStatus1Code` (16 codes) for Domestic Standing Orders & International Standing Orders:
     - `CANC`
     - `RCVD`
@@ -125,17 +125,17 @@
 
 ### Removed
 
-- Removed duplicate `ExternalMandateStatus1Code` codes (#12)
-- Removed deprecated `OBExternalStatus3Code` (#13)
+- [CDRW-4860] Removed duplicate `ExternalMandateStatus1Code` codes (#12)
+- [v40_KI43] Removed deprecated `OBExternalStatus3Code` (#13)
 
 ### Fixed
 
-- codesets are now contiguous and organized alphabetically
-- several descriptions have been moved out of the codeset name column and into the description column
-- Corrected `OBExternalStatusReason1Code` `1180` description (#21)
-- Moved the `BusinessCurrentAccount` code from `OBInternalCardSchemeType1Code` to `OBInternalProductType1Code` (#13)
-- Corrected `OBExternalAuthorisation1Code` to `OBInternalAuthorisation1Code` (#14)
-- Fix typo in `ExternalPaymentGroupStatus1Code` `INFA` description (#15)
+- [CDRW-4775] Codesets are now contiguous and organized alphabetically
+- [CDRW-4775] Several descriptions have been moved out of the codeset name column and into the description column
+- [CDRW-4906] Corrected `OBExternalStatusReason1Code` `1180` description (#21)
+- [v40_KI43] Moved the `BusinessCurrentAccount` code from `OBInternalCardSchemeType1Code` to `OBInternalProductType1Code` (#13)
+- [v40_KI44] Corrected `OBExternalAuthorisation1Code` to `OBInternalAuthorisation1Code` (#14)
+- [CDRW-4855] Fix typo in `ExternalPaymentGroupStatus1Code` `INFA` description (#15)
 
 ## Older Versions
 
