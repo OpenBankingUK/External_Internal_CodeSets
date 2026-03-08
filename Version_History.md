@@ -70,7 +70,7 @@ For v4.0.1 the following approach has been adopted for identifying changes:
     - `AUTH`
     - `COND`
     - `AWUP`
-- [v40_KI39] Updated description of `U037` in `OBExternalStatusReason1Code` (#7)
+- [v40_KI39] Updated description of `U037` in `OBExternalStatusReason1Code` to "Authorisation failed by one (or more) of the authenticators." (#7)
 - [v4.0.1 RC 1] Separated `ExternalPaymentTransactionStatus1Code` into 5 codesets for specific contexts (#16). New Codes look like:
   - `ExternalPaymentTransactionStatus1Code` (16 codes) for Domestic Standing Orders & International Standing Orders:
     - `CANC`
