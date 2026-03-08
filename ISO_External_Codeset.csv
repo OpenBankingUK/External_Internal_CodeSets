@@ -303,7 +303,7 @@ ExternalPurpose1Code,ACCT,AccountManagement,Transaction moves funds between 2 ac
 ExternalPurpose1Code,CASH,CashManagementTransfer,Transaction is a general cash management instruction.,Both
 ExternalPurpose1Code,COLL,CollectionPayment,Transaction is a collection of funds initiated via a credit transfer or direct debit.,Both
 ExternalPurpose1Code,CSDB,CashDisbursementCashManagement,Transaction is related to cash disbursement.,Both
-ExternalPurpose1Code,DEPT,Deposit,Transaction is releted to a payment of deposit.,Both
+ExternalPurpose1Code,DEPT,Deposit,Transaction is related to a payment of deposit.,Both
 ExternalPurpose1Code,INTC,IntraCompanyPayment,"Transaction is an intra-company payment, ie, a payment between two companies belonging to the same group.",
 ExternalPurpose1Code,INTP,IntraPartyPayment,"Transaction is a payment between two accounts belonging to the same party (intra-party payment), where party is a natural person (identified by a private ID, not organisation ID).",Both
 ExternalPurpose1Code,LIMA,LiquidityManagement,"Bank initiated account transfer to support zero target balance management, pooling or sweeping.",Both
@@ -484,7 +484,7 @@ ExternalPurpose1Code,IPPS,InstantPaymentsAtPOS,"Transaction in which the amount 
 ExternalPurpose1Code,IPRT,InstantPaymentsReturn,Transaction in which the Return of the amount is fully or partial returned.,
 ExternalPurpose1Code,IPU2,InstantPaymentsUnattendedVendingMachineWith2FA,Transaction is made via an unattending vending machine by using 2-factor-authentification.,
 ExternalPurpose1Code,IPUW,InstantPaymentsUnattendedVendingMachineWithout2FA,Transaction is made via an unattending vending machine by without using 2-factor-authentification.,
-ExternalPurpose1Code,ANNI,Annuity,"Transaction settles annuity related to credit, insurance, investments, other.n",
+ExternalPurpose1Code,ANNI,Annuity,"Transaction settles annuity related to credit, insurance, investments, other.",
 ExternalPurpose1Code,CAFI,CustodianManagementFeeInhouse,Transaction is the payment of custodian account management fee where custodian bank and current account servicing bank coincide,
 ExternalPurpose1Code,CFDI,CapitalFallingDueInhouse,Transaction is the payment of capital falling due where custodian bank and current account servicing bank coincide,
 ExternalPurpose1Code,CMDT,CommodityTransfer,Transaction is payment of commodities.,CHAPS

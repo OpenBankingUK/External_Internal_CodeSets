@@ -1,6 +1,20 @@
 # Version History
 
-## Unreleased
+For v4.0.1 the following approach has been adopted for identifying changes:
+
+- [Known Issues](https://openbanking.atlassian.net/wiki/spaces/DZ/pages/47546479/Known+Specification+Issues) - these are a tagged with the KI identifier, e.g. [v40_KI45]
+- [Change Requests](https://openbanking.atlassian.net/wiki/spaces/WOR/pages/3872948225/2025-09-11+EAG+for+v4.x.x+Standards+release+Workshop+4#Discussion-material) - these are tagged the CR number used in the consultations, e.g. [CR4a]
+- EAG/Consultation items - Items included in the consultations are tagged with an identifier representing the consultation period they were introduced, e.g. [v4.0.1 RC 1]
+- Feedback remediation - Technical errata and other minor corrections identified by participants or OBL during the Advanced Information period for Release Candidates 1 and 2 with an appropriate identifier for internal OBL traceability e.g. [CDRW-5006]
+
+**Consultations:**
+
+- [v4.x.x Consultation 1](https://openbanking.atlassian.net/wiki/spaces/WOR/pages/3880550401/Feedback+-+V4.x.x+Consultation+1)
+- [v4.0.1 Draft 1](https://openbanking.atlassian.net/wiki/spaces/WOR/pages/4096950276/Feedback+-+v4.0.1+Draft+1)
+- [v4.0.1 Release Candidate 1](https://openbanking.atlassian.net/wiki/spaces/WOR/pages/4203282434/Feedback+-+v4.0.1+Release+Candidate+1)
+- [v4.0.1 Release Candidate 2](https://openbanking.atlassian.net/wiki/spaces/WOR/pages/4309942273/Feedback+-+v4.0.1+Release+Candidate+2)
+
+## v4.0.1 - Unreleased
 
 ### Fixed
 
@@ -39,12 +53,11 @@
   - `RJCT`
   - `UNKN`
   - `CANC`
-- [v40_KI39] Description of code value `U037` updated to "Authorisation failed by one (or more) of the authenticators."
 - [v40_KI46] Added `NONE` to `OBFrequency2Code`
 
 ### Changed
 
-- [CDRW-4764] Separated `OBInternalConsentStatus1Code` into 3 codesets for certain contexts (#17):
+- [v4.0.1 Draft 1] Separated `OBInternalConsentStatus1Code` into 3 codesets for certain contexts (#17):
   - Removed `COND` & `AWUP` from `OBInternalConsentStatus2Code`
   - Added `OBInternalConsentStatus2Code` to `OB_Internal_Codeset.csv` with the following values:
     - `AWAU`
@@ -58,7 +71,7 @@
     - `COND`
     - `AWUP`
 - [v40_KI39] Updated description of `U037` in `OBExternalStatusReason1Code` (#7)
-- [CDRW-4764] Separated `ExternalPaymentTransactionStatus1Code` into 5 codesets for specific contexts (#16). New Codes look like:
+- [v4.0.1 RC 1] Separated `ExternalPaymentTransactionStatus1Code` into 5 codesets for specific contexts (#16). New Codes look like:
   - `ExternalPaymentTransactionStatus1Code` (16 codes) for Domestic Standing Orders & International Standing Orders:
     - `CANC`
     - `RCVD`
