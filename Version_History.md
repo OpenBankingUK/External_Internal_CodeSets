@@ -57,7 +57,7 @@ For v4.0.1 the following approach has been adopted for identifying changes:
 
 ### Changed
 
-- [v4.0.1 Draft 1] Separated `OBInternalConsentStatus1Code` into 3 codesets for certain contexts (#17):
+- [v4.0.1 RC 1] Separated `OBInternalConsentStatus1Code` into 3 codesets for certain contexts (#17):
   - Removed `COND` & `AWUP` from `OBInternalConsentStatus2Code`
   - Added `OBInternalConsentStatus2Code` to `OB_Internal_Codeset.csv` with the following values:
     - `AWAU`
