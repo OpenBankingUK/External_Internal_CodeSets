@@ -2,8 +2,8 @@
 
 For v4.0.1 the following approach has been adopted for identifying changes:
 
-- [Known Issues](https://openbanking.atlassian.net/wiki/spaces/DZ/pages/47546479/Known+Specification+Issues) - these are a tagged with the KI identifier, e.g. [v40_KI45]
-- [Change Requests](https://openbanking.atlassian.net/wiki/spaces/WOR/pages/3872948225/2025-09-11+EAG+for+v4.x.x+Standards+release+Workshop+4#Discussion-material) - these are tagged the CR number used in the consultations, e.g. [CR4a]
+- [Known Issues](https://openbanking.atlassian.net/wiki/spaces/DZ/pages/47546479/Known+Specification+Issues) - these are tagged with the KI identifier, e.g. [v40_KI45]
+- [Change Requests](https://openbanking.atlassian.net/wiki/spaces/WOR/pages/3872948225/2025-09-11+EAG+for+v4.x.x+Standards+release+Workshop+4#Discussion-material) - these are tagged with the CR number used in the consultations, e.g. [CR4a]
 - EAG/Consultation items - Items included in the consultations are tagged with an identifier representing the consultation period they were introduced, e.g. [v4.0.1 RC 1]
 - Feedback remediation - Technical errata and other minor corrections identified by participants or OBL during the Advanced Information period for Release Candidates 1 and 2 with an appropriate identifier for internal OBL traceability e.g. [CDRW-5006]
 
@@ -21,7 +21,7 @@ For v4.0.1 the following approach has been adopted for identifying changes:
 - [CDRW-5006] Fixed typo in `OBExternalStatusReason1Code` `U003` description
 - [CDRW-5047] Fixed the following typographical issues:
   - Corrected capitalisation of `ProForma` in `OBInternalAccountStatus1Code`
-  - Removed unneccesary `n` from the end of `ANNI` description
+  - Removed unnecessary `n` from the end of `ANNI` description
   - Fixed spelling of 'related' in `DEPT`
   - Removed additional whitespace from end of `OBExternalCommunicationMethod2Code`
   - Removed additional whitespace from end of `Enabled`
