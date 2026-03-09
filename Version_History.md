@@ -19,7 +19,15 @@ For v4.0.1 the following approach has been adopted for identifying changes:
 ### Fixed
 
 - [CDRW-5006] Fixed typo in `OBExternalStatusReason1Code` `U003` description
-- [CDRW-5047] Corrected capitalisation of `ProForma` in `OBInternalAccountStatus1Code`
+- [CDRW-5047] Fixed the following typographical issues:
+  - Corrected capitalisation of `ProForma` in `OBInternalAccountStatus1Code`
+  - Removed unneccesary `n` from the end of `ANNI` description
+  - Fixed spelling of 'related' in `DEPT`
+  - Removed additional whitespace from end of `OBExternalCommunicationMethod2Code`
+  - Removed additional whitespace from end of `Enabled`
+  - Removed additional whitespace from the end of `Annual`
+  - Removed duplicate `BusinessCurrentAccount` entry.
+
 
 ## v4.0.1 Release Candidate 2 - 2026-02-04
 
