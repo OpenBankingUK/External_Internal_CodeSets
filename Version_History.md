@@ -19,6 +19,7 @@ For v4.0.1 the following approach has been adopted for identifying changes:
 ### Fixed
 
 - [CDRW-5006] Fixed typo in `OBExternalStatusReason1Code` `U003` description
+- [CDRW-5047] Corrected capitalisation of `ProForma` in `OBInternalAccountStatus1Code`
 
 ## v4.0.1 Release Candidate 2 - 2026-02-04
 

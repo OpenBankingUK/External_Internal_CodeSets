@@ -504,7 +504,7 @@ OBInternalAccountRole1Code,UK.OBIE.RegisteredShareholderName,UK.OBIE.RegisteredS
 OBInternalAccountStatus1Code,Enabled,Enabled,Account can be used for its intended purpose.,,
 OBInternalAccountStatus1Code,Disabled,Disabled,"Account cannot be used for its intended purpose, either temporarily or permanently.",,
 OBInternalAccountStatus1Code,Deleted,Deleted,Account cannot be used any longer.,,
-OBInternalAccountStatus1Code,Proforma,Proforma,Account is temporary and can be partially used for its intended purpose. The account will be fully available for use when the account servicer has received all relevant documents.,,
+OBInternalAccountStatus1Code,ProForma,ProForma,Account is temporary and can be partially used for its intended purpose. The account will be fully available for use when the account servicer has received all relevant documents.,,
 OBInternalAccountStatus1Code,Pending,Pending,Account change is pending approval.,,
 OBInternalAccountType1Code,Personal,Personal,Specifies that the type of account is personal.,,
 OBInternalAccountType1Code,Business,Business,Specifies that the type of account is business.,,
