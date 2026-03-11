@@ -83,7 +83,6 @@ ExternalCategoryPurpose1Code,FCDT,ForeignCurrencyDomesticTransfer,Foreign Curren
 ExternalCategoryPurpose1Code,CIPC,CashInPreCredit,Transaction is a direct debit for a cash order of notes and/or coins.,
 ExternalCategoryPurpose1Code,CONC,CashOutNotesCoins,Transaction is a direct debit for a cash order of notes and/or coins.,
 ExternalCategoryPurpose1Code,CGWV,CarrierGuardedWholesaleValuables,Transaction is a payment towards a Party for the collection of cash by the Cash in Transit company.,
-ExternalCategoryPurpose1Code,CRYP,CryptoAssets,Transaction is related to the purchase or sale of crypto assets.,
 ExternalChargeType1Code,BRKF,BrokerageFee,Fee paid to a broker for services provided.,
 ExternalChargeType1Code,BTCH,Batch,Fee paid for processing a batch of transactions.,
 ExternalChargeType1Code,COMM,Commission,Fee paid for services provided.,
@@ -688,5 +687,4 @@ ExternalTaxAmountType1Code,CITY,CityTax,Tax accessed by city jurisdications with
 ExternalTaxAmountType1Code,CNTY,CountyTax,Tax accessed by county jurisdications within a country.,
 ExternalTaxAmountType1Code,LOCL,LocalTax,Tax accessed by local jurisdications within a country.,
 ExternalTaxAmountType1Code,PROV,ProvinceTax,Tax accessed by province jurisdications within a country.,
-
 ExternalTaxAmountType1Code,STAT,StateTax,Tax accessed by state jurisdications within a country.,
