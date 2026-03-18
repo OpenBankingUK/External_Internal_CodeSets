@@ -28,6 +28,10 @@ For v4.0.1 the following approach has been adopted for identifying changes:
   - Removed additional whitespace from the end of `Annual`
   - Removed duplicate `BusinessCurrentAccount` entry.
 
+### Updated
+
+- [CR4a] Updated Code Name and description of `CRYP` to match ISO 20022 approved entry. Code Name was previously `CryptoTransaction` and is now `CryptoAssets`.  Description has been updated to reflect this change.
+
 
 ## v4.0.1 Release Candidate 2 - 2026-02-04
 
