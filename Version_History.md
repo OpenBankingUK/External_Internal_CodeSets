@@ -28,6 +28,17 @@ For v4.0.1 the following approach has been adopted for identifying changes:
   - Removed additional whitespace from the end of `Annual`
   - Removed duplicate `BusinessCurrentAccount` entry.
 - [CDRW-5071] Updated `INFA` and `INCO` code descriptions in `ExternalPaymentTransactionStatus4Code` to be File Payment specific.
+- [CDRW-5072] Fixed typographical and structural errors in `OB_Internal_Codeset`:
+  - Corrected `UK.OBIE.BACS` Code Definition from "Back Payment Scheme" to "BACS Payment Scheme" in `OBInternalLocalInstrument1Code`
+  - Fixed `Multiple` in `OBInternalAuthorisation1Code`: moved description text from Code Name column to Code Definition column; Code Name is now `Multiple` (consistent with `Any` and `Single`)
+  - Removed trailing space from `Actual` Code Value and Code Name in `OBInternalExchangeRateType2Code`
+  - Removed trailing spaces from Code Names of `EMAL`, `FAXI`, `ONLI`, and `POST` in `OBExternalCommunicationMethod2Code`
+  - Removed trailing space from `Available` Code Name in `OBInternalLimitType1Code`
+  - Fixed grammar in `U000` Code Definition: "to specific" corrected to "to specify" in `OBExternalStatusReason1Code`
+  - Fixed grammar in `U041` Code Definition: "could not applied" corrected to "could not be applied" in `OBExternalStatusReason1Code`
+  - Corrected `MORT` Code Name from "Mortgage Account" to "MortgageAccount" in `OBExternalCashAccountType1Code`
+  - Added missing terminal period to `CISH` and `MORT` Code Definitions in `OBExternalCashAccountType1Code`
+  - Fixed capitalisation in `UK.OBIE.MoneyTransfer` Code Definition: "To Indicate" corrected to "To indicate" in `OBInternalLocalInstrument1Code`
 
 ### Updated
 
