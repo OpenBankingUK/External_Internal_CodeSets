@@ -510,7 +510,7 @@ OBInternalAccountType1Code,Personal,Personal,Specifies that the type of account 
 OBInternalAccountType1Code,Business,Business,Specifies that the type of account is business.,,
 OBInternalAppliedAuthenticationApproach1Code,CA,CA,Specifies a character string with a maximum length of 40 characters. Usage: This field indicates whether the PSU was subject to SCA performed by the TPP,,
 OBInternalAppliedAuthenticationApproach1Code,SCA,SCA,Specifies a character string with a maximum length of 40 characters. Usage: This field indicates whether the PSU was subject to SCA performed by the TPP,,
-OBInternalAuthorisation1Code,Multiple,Multiple,Multiple authorisation type is requested.,,
+OBInternalAuthorisation1Code,Multiple,Multiple,Type of authorisation flow requested.,,
 OBInternalAuthorisation1Code,Any,Any,Type of authorisation flow requested.,,
 OBInternalAuthorisation1Code,Single,Single,Type of authorisation flow requested.,,
 OBInternalBeneficiaryType1Code,Trusted,Trusted,Specifies the Beneficiary Type.,,
