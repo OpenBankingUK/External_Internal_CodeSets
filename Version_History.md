@@ -27,7 +27,7 @@ For v4.0.1 the following approach has been adopted for identifying changes:
   - Removed additional whitespace from end of `Enabled`
   - Removed additional whitespace from the end of `Annual`
   - Removed duplicate `BusinessCurrentAccount` entry.
-- [CDRW-5071] Updated 'INFA' and 'INCO' code descriptions in 'ExternalPaymentTransactionStatus4Code' to be File Payment specific.
+- [CDRW-5071] Updated `INFA` and `INCO` code descriptions in `ExternalPaymentTransactionStatus4Code` to be File Payment specific.
 
 ### Updated
 
