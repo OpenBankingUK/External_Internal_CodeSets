@@ -27,6 +27,7 @@ For v4.0.1 the following approach has been adopted for identifying changes:
   - Removed additional whitespace from end of `Enabled`
   - Removed additional whitespace from the end of `Annual`
   - Removed duplicate `BusinessCurrentAccount` entry.
+- [CDRW-5071] Fix INFA and INCO code descriptions
 
 ### Updated
 
