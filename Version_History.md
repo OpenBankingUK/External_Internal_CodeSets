@@ -18,6 +18,7 @@ For v4.0.1 the following approach has been adopted for identifying changes:
 
 ### Fixed
 
+- Fixed trailing whitespace and non-breaking space characters in `OBExternalStatusReason1Code` descriptions for the following codes: `U009`, `AB01`, `AB02`, `AB03`, `AB04`, `AC04`, `AG03`, `CH21`, `CH22`, `DS03`, `RECI`, `TKCM`, `TKSG`, `TKVE`
 - [CDRW-5006] Fixed typo in `OBExternalStatusReason1Code` `U003` description
 - [CDRW-5047] Fixed the following typographical issues:
   - Corrected capitalisation of `ProForma` in `OBInternalAccountStatus1Code`
