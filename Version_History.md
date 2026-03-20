@@ -39,6 +39,7 @@ For v4.0.1 the following approach has been adopted for identifying changes:
   - Corrected `MORT` Code Name from "Mortgage Account" to "MortgageAccount" in `OBExternalCashAccountType1Code`
   - Added missing terminal period to `CISH` and `MORT` Code Definitions in `OBExternalCashAccountType1Code`
   - Fixed capitalisation in `UK.OBIE.MoneyTransfer` Code Definition: "To Indicate" corrected to "To indicate" in `OBInternalLocalInstrument1Code`
+- [CDRW-5075] Fixed trailing whitespace and non-breaking space characters in `OBExternalStatusReason1Code` descriptions for the following codes: `U009`, `AB01`, `AB02`, `AB03`, `AB04`, `AC04`, `AG03`, `CH21`, `CH22`, `DS03`, `RECI`, `TKCM`, `TKSG`, `TKVE`
 
 ### Updated
 
