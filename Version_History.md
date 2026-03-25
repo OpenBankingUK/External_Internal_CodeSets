@@ -39,29 +39,24 @@ For v4.0.1 the following approach has been adopted for identifying changes:
   - Corrected `MORT` Code Name from "Mortgage Account" to "MortgageAccount" in `OBExternalCashAccountType1Code`
   - Added missing terminal period to `CISH` and `MORT` Code Definitions in `OBExternalCashAccountType1Code`
   - Fixed capitalisation in `UK.OBIE.MoneyTransfer` Code Definition: "To Indicate" corrected to "To indicate" in `OBInternalLocalInstrument1Code`
+- [CDRW-4775] Codesets are now contiguous and organized alphabetically
+- [CDRW-4775] Several descriptions have been moved out of the codeset name column and into the description column
+- [CDRW-4906] Corrected `OBExternalStatusReason1Code` `1180` description (#21)
+- [v40_KI43] Moved the `BusinessCurrentAccount` code from `OBInternalCardSchemeType1Code` to `OBInternalProductType1Code` (#13)
+- [v40_KI44] Corrected `OBExternalAuthorisation1Code` to `OBInternalAuthorisation1Code` (#14)
+- [CDRW-4855] Fix typo in `ExternalPaymentGroupStatus1Code` `INFA` description (#15)
 
 ### Updated
 
 - [CR4a] Updated Code Name and description of `CRYP` to match ISO 20022 approved entry. Code Name was previously `CryptoTransaction` and is now `CryptoAssets`.  Description has been updated to reflect this change.
-
-
-## v4.0.1 Release Candidate 2 - 2026-02-04
+- [CDRW-5007] Updated ISO 20022 External Codeset files to Q3 2025 release.
+- [CR4a] Updated description for CRYP code to "Transaction is related to the purchase or sale of cryptocurrency."
+- [CDRW-5002] Enhanced the descriptions of current `OBInternalPaymentContext1Code` codes `BillingGoodsAndServicesInAdvance`, `BillingGoodsAndServicesInArrears`, `EcommerceMerchantInitiatedPayment`, `FaceToFacePointOfSale`, `TransferToSelf`, `TransferToThirdParty`
 
 ### Added
 
 - [v40_KI45] Added `LWMH`, `LXMH`, and `TWYR` to `OBFrequency6Code` in OBInternal
 - [v40_KI46] Added `SLCT` to `OBFrequency2Code` in OBInternal
-
-### Updated
-
-- [CDRW-5007] Updated ISO 20022 External Codeset files to Q3 2025 release.
-- [CR4a] Updated description for CRYP code to "Transaction is related to the purchase or sale of cryptocurrency."
-- [CDRW-5002] Enhanced the descriptions of current `OBInternalPaymentContext1Code` codes `BillingGoodsAndServicesInAdvance`, `BillingGoodsAndServicesInArrears`, `EcommerceMerchantInitiatedPayment`, `FaceToFacePointOfSale`, `TransferToSelf`, `TransferToThirdParty`
-
-## v4.0.1 Release Candidate 1 - 2026-01-05
-
-### Added
-
 - [CR1] Added to `OBInternalStatementFeeType1Code`:
   - `UK.OBIE.InstalmentPlan`
   - `UK.OBIE.ReturnedPayment`
@@ -165,15 +160,6 @@ For v4.0.1 the following approach has been adopted for identifying changes:
 
 - [CDRW-4860] Removed duplicate `ExternalMandateStatus1Code` codes (#12)
 - [v40_KI43] Removed deprecated `OBExternalStatus3Code` (#13)
-
-### Fixed
-
-- [CDRW-4775] Codesets are now contiguous and organized alphabetically
-- [CDRW-4775] Several descriptions have been moved out of the codeset name column and into the description column
-- [CDRW-4906] Corrected `OBExternalStatusReason1Code` `1180` description (#21)
-- [v40_KI43] Moved the `BusinessCurrentAccount` code from `OBInternalCardSchemeType1Code` to `OBInternalProductType1Code` (#13)
-- [v40_KI44] Corrected `OBExternalAuthorisation1Code` to `OBInternalAuthorisation1Code` (#14)
-- [CDRW-4855] Fix typo in `ExternalPaymentGroupStatus1Code` `INFA` description (#15)
 
 ## Older Versions
 
