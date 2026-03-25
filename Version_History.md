@@ -16,52 +16,10 @@ For v4.0.1 the following approach has been adopted for identifying changes:
 
 ## v4.0.1 - Unreleased
 
-### Fixed
-
-- [CDRW-5006] Fixed typo in `OBExternalStatusReason1Code` `U003` description
-- [CDRW-5047] Fixed the following typographical issues:
-  - Corrected capitalisation of `ProForma` in `OBInternalAccountStatus1Code`
-  - Removed unnecessary `n` from the end of `ANNI` description
-  - Fixed spelling of 'related' in `DEPT`
-  - Removed additional whitespace from end of `OBExternalCommunicationMethod2Code`
-  - Removed additional whitespace from end of `Enabled`
-  - Removed additional whitespace from the end of `Annual`
-  - Removed duplicate `BusinessCurrentAccount` entry.
-- [CDRW-5071] Updated `INFA` and `INCO` code descriptions in `ExternalPaymentTransactionStatus4Code` to be File Payment specific.
-- [CDRW-5072] Fixed typographical and structural errors in `OB_Internal_Codeset`:
-  - Corrected `UK.OBIE.BACS` Code Definition from "Back Payment Scheme" to "BACS Payment Scheme" in `OBInternalLocalInstrument1Code`
-  - Fixed `Multiple` in `OBInternalAuthorisation1Code`: moved description text from Code Name column to Code Definition column; Code Name is now `Multiple` (consistent with `Any` and `Single`)
-  - Removed trailing space from `Actual` Code Value and Code Name in `OBInternalExchangeRateType2Code`
-  - Removed trailing spaces from Code Names of `EMAL`, `FAXI`, `ONLI`, and `POST` in `OBExternalCommunicationMethod2Code`
-  - Removed trailing space from `Available` Code Name in `OBInternalLimitType1Code`
-  - Fixed grammar in `U000` Code Definition: "to specific" corrected to "to specify" in `OBExternalStatusReason1Code`
-  - Fixed grammar in `U041` Code Definition: "could not applied" corrected to "could not be applied" in `OBExternalStatusReason1Code`
-  - Corrected `MORT` Code Name from "Mortgage Account" to "MortgageAccount" in `OBExternalCashAccountType1Code`
-  - Added missing terminal period to `CISH` and `MORT` Code Definitions in `OBExternalCashAccountType1Code`
-  - Fixed capitalisation in `UK.OBIE.MoneyTransfer` Code Definition: "To Indicate" corrected to "To indicate" in `OBInternalLocalInstrument1Code`
-
-### Updated
-
-- [CR4a] Updated Code Name and description of `CRYP` to match ISO 20022 approved entry. Code Name was previously `CryptoTransaction` and is now `CryptoAssets`.  Description has been updated to reflect this change.
-
-
-## v4.0.1 Release Candidate 2 - 2026-02-04
-
 ### Added
 
 - [v40_KI45] Added `LWMH`, `LXMH`, and `TWYR` to `OBFrequency6Code` in OBInternal
-- [v40_KI46] Added `SLCT` to `OBFrequency2Code` in OBInternal
-
-### Updated
-
-- [CDRW-5007] Updated ISO 20022 External Codeset files to Q3 2025 release.
-- [CR4a] Updated description for CRYP code to "Transaction is related to the purchase or sale of cryptocurrency."
-- [CDRW-5002] Enhanced the descriptions of current `OBInternalPaymentContext1Code` codes `BillingGoodsAndServicesInAdvance`, `BillingGoodsAndServicesInArrears`, `EcommerceMerchantInitiatedPayment`, `FaceToFacePointOfSale`, `TransferToSelf`, `TransferToThirdParty`
-
-## v4.0.1 Release Candidate 1 - 2026-01-05
-
-### Added
-
+- [v40_KI46] Added `NONE` and `SLCT` to `OBFrequency2Code` in OBInternal
 - [CR1] Added to `OBInternalStatementFeeType1Code`:
   - `UK.OBIE.InstalmentPlan`
   - `UK.OBIE.ReturnedPayment`
@@ -78,10 +36,14 @@ For v4.0.1 the following approach has been adopted for identifying changes:
   - `RJCT`
   - `UNKN`
   - `CANC`
-- [v40_KI46] Added `NONE` to `OBFrequency2Code`
 
 ### Changed
 
+- [CR4a] Updated Code Name and description of `CRYP` to match ISO 20022 approved entry. Code Name was previously `CryptoTransaction` and is now `CryptoAssets`.  Description has been updated to reflect this change.
+- [CDRW-5007] Updated ISO 20022 External Codeset files to Q3 2025 release.
+- [CR4a] Updated description for CRYP code to "Transaction is related to the purchase or sale of cryptocurrency."
+- [CDRW-5002] Enhanced the descriptions of current `OBInternalPaymentContext1Code` codes `BillingGoodsAndServicesInAdvance`, `BillingGoodsAndServicesInArrears`, `EcommerceMerchantInitiatedPayment`, `FaceToFacePointOfSale`, `TransferToSelf`, `TransferToThirdParty`
+- [v40_KI39] Updated description of `U037` in `OBExternalStatusReason1Code` to "Authorisation failed by one (or more) of the authenticators." (#7)
 - [v4.0.1 Draft 1] Separated `OBInternalConsentStatus1Code` into 3 codesets for certain contexts (#17):
   - Removed `COND` & `AWUP` from `OBInternalConsentStatus2Code`
   - Added `OBInternalConsentStatus2Code` to `OB_Internal_Codeset.csv` with the following values:
@@ -95,7 +57,6 @@ For v4.0.1 the following approach has been adopted for identifying changes:
     - `AUTH`
     - `COND`
     - `AWUP`
-- [v40_KI39] Updated description of `U037` in `OBExternalStatusReason1Code` to "Authorisation failed by one (or more) of the authenticators." (#7)
 - [v4.0.1 Draft 1] Separated `ExternalPaymentTransactionStatus1Code` into 5 codesets for specific contexts (#16). New Codes look like:
   - `ExternalPaymentTransactionStatus1Code` (16 codes) for Domestic Standing Orders & International Standing Orders:
     - `CANC`
@@ -168,6 +129,27 @@ For v4.0.1 the following approach has been adopted for identifying changes:
 
 ### Fixed
 
+- [CDRW-5006] Fixed typo in `OBExternalStatusReason1Code` `U003` description
+- [CDRW-5047] Fixed the following typographical issues:
+  - Corrected capitalisation of `ProForma` in `OBInternalAccountStatus1Code`
+  - Removed unnecessary `n` from the end of `ANNI` description
+  - Fixed spelling of 'related' in `DEPT`
+  - Removed additional whitespace from end of `OBExternalCommunicationMethod2Code`
+  - Removed additional whitespace from end of `Enabled`
+  - Removed additional whitespace from the end of `Annual`
+  - Removed duplicate `BusinessCurrentAccount` entry.
+- [CDRW-5071] Updated `INFA` and `INCO` code descriptions in `ExternalPaymentTransactionStatus4Code` to be File Payment specific.
+- [CDRW-5072] Fixed typographical and structural errors in `OB_Internal_Codeset`:
+  - Corrected `UK.OBIE.BACS` Code Definition from "Back Payment Scheme" to "BACS Payment Scheme" in `OBInternalLocalInstrument1Code`
+  - Fixed `Multiple` in `OBInternalAuthorisation1Code`: moved description text from Code Name column to Code Definition column; Code Name is now `Multiple` (consistent with `Any` and `Single`)
+  - Removed trailing space from `Actual` Code Value and Code Name in `OBInternalExchangeRateType2Code`
+  - Removed trailing spaces from Code Names of `EMAL`, `FAXI`, `ONLI`, and `POST` in `OBExternalCommunicationMethod2Code`
+  - Removed trailing space from `Available` Code Name in `OBInternalLimitType1Code`
+  - Fixed grammar in `U000` Code Definition: "to specific" corrected to "to specify" in `OBExternalStatusReason1Code`
+  - Fixed grammar in `U041` Code Definition: "could not applied" corrected to "could not be applied" in `OBExternalStatusReason1Code`
+  - Corrected `MORT` Code Name from "Mortgage Account" to "MortgageAccount" in `OBExternalCashAccountType1Code`
+  - Added missing terminal period to `CISH` and `MORT` Code Definitions in `OBExternalCashAccountType1Code`
+  - Fixed capitalisation in `UK.OBIE.MoneyTransfer` Code Definition: "To Indicate" corrected to "To indicate" in `OBInternalLocalInstrument1Code`
 - [CDRW-4775] Codesets are now contiguous and organized alphabetically
 - [CDRW-4775] Several descriptions have been moved out of the codeset name column and into the description column
 - [CDRW-4906] Corrected `OBExternalStatusReason1Code` `1180` description (#21)
